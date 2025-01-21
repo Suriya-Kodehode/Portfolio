@@ -4,6 +4,7 @@ import styles from './mode.module.css';
 import lightImage from '/images/sun-light.svg';
 import darkImage from '/images/moon-dark.svg';
 
+const root = document.getElementById('root');
 
 export function ToggleMode() {
     const [lightMode, setLightMode] = useState(false)
@@ -13,11 +14,11 @@ export function ToggleMode() {
     }
     useEffect(() => {
         if (lightMode) {
-            document.body.classList.add('lightmode');
-            document.body.classList.remove('darkmode');
+            root.classList.add('lightmode');
+            root.classList.remove('darkmode');
         } else {
-            document.body.classList.add('darkmode');
-            document.body.classList.remove('lightmode');
+            root.classList.add('darkmode');
+            root.classList.remove('lightmode');
         }
     })
 
