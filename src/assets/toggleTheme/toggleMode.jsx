@@ -9,7 +9,7 @@ const root = document.getElementById('root');
 export function ToggleMode() {
     const [lightMode, setLightMode] = useState(false)
 
-    const toggleLightMode = () => {
+    const toggleTheme = () => {
         setLightMode(!lightMode);
     }
     useEffect(() => {
@@ -25,7 +25,7 @@ export function ToggleMode() {
     return (
         <div className={styles.container}>
              <nav id={styles.themeContainer}>
-                <button id={styles.themeButton} onClick={toggleLightMode}>
+                <button id={styles.themeButton} onClick={toggleTheme}>
                     <img id={styles.modeImage} src={lightMode ? darkImage : lightImage} alt={lightMode ? 'Light Mode' : 'Dark Mode'}/>
                 </button>
             </nav>
