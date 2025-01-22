@@ -9,6 +9,7 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
+   
 }
 
 /* Theme Button */
@@ -16,6 +17,7 @@
     width: 2em;
     height: 2em;
 }
+
 #themeButton {
     border-radius: 50px;
     border: 1px solid transparent;
@@ -26,17 +28,17 @@
     background-color: inherit;
     cursor: pointer;
     transition: border-color 0.25s;
-
-    
+   
   }
 
   #themeButton:hover {
     border-color: none;
     background-color: rgba(128, 128, 128, .5);
+    
   }
   #themeButton:focus,
   #themeButton:focus-visible {
-    outline: none;
+    outline: inherit;
     box-shadow: none;
   }
   /* /Theme Button */

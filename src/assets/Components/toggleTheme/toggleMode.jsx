@@ -26,7 +26,9 @@ export function ToggleMode() {
         <div className={styles.container}>
              <nav id={styles.themeContainer}>
                 <button id={styles.themeButton} onClick={toggleTheme}>
-                    <img id={styles.modeImage} src={lightMode ? darkImage : lightImage} alt={lightMode ? 'Light Mode' : 'Dark Mode'}/>
+                    <img id={styles.modeImage}  
+                    src={lightMode ? darkImage : lightImage} 
+                    alt={lightMode ? 'Dark Mode' : 'Light Mode'}/>
                 </button>
             </nav>
         </div>
