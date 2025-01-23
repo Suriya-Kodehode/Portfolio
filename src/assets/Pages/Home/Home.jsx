@@ -9,16 +9,16 @@ function Home() {
 
     return (
         <div id={styles.homeContainer}>
-      <div className='header'>
+      <div className={styles.header}>
         <ToggleMode />
         <Header />
       </div>
       
-      <div className='main'>
+      <div className={styles.main}>
         <Content />
         </div>
       
-      <div className='footer'>
+      <div className={styles.footer}>
 
       </div>
     </div>

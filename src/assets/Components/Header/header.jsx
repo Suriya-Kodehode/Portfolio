@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Home from '../../Pages/Home/Home.jsx';
 
 
@@ -8,7 +8,11 @@ export function Header() {
 
     return (
         <div className={styles.container}>
-           
+           <nav>
+                <ul>
+                    <li></li>
+                </ul>
+            </nav>
         </div>
     )
 }

@@ -20,11 +20,11 @@
   
   .main {
     grid-area: main;
-    background-color: yellow;
+    /* background-color: yellow; */
   }
   
   .footer {
     grid-area: footer;
-    background-color: purple;
+    /* background-color: purple; */
   }
   /* /Layout container */
