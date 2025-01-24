@@ -1,0 +1,21 @@
+
+
+main.content {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgArea {
+    background-color: aqua;
+    width: 30%;
+}
+.imgArea img {
+    display: flex;
+    width: 9.25rem;
+}
