@@ -8,7 +8,7 @@ import { Content } from '../../Content/content.jsx'
 function Home() {
 
     return (
-        <div id={styles.homeContainer}>
+        <div className={styles.homeContainer}>
       <div className={styles.header}>
         <ToggleMode />
         <Header />

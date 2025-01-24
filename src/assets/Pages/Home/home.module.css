@@ -1,7 +1,7 @@
 
 
 /* Layout container */
-#homeContainer {
+.homeContainer {
     display: grid;
     width: 100vw;
     height: 100vh;
