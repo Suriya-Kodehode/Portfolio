@@ -4,11 +4,11 @@ import { Link, useLocation } from 'react-router-dom';
 
 import styles from './header.module.css';
 import { useContext } from 'react'
-import { SavedTheme } from '../toggleTheme/savedTheme';
+import { useTheme } from '../toggleTheme/ThemeContext';
 
 export function Header() {
     const location = useLocation();
-    const { theme } = useContext(SavedTheme)
+    const { theme } = useTheme()
     const activeClass = theme === 'light' ? styles.lightPageActive : styles.darkPageActive
 
     return (
