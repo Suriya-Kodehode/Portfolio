@@ -24,6 +24,14 @@ export function Content() {
                             <div>
                                 <a href='mailto:suriya.kodehode@gmail.com'>suriya.kodehode@gmail.com</a>
                             </div>
+                            <div>
+                                <div className={styles.linkTo}>
+
+                                </div>
+                                <div className={styles.linkTo}>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
