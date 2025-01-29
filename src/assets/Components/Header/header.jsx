@@ -3,10 +3,9 @@
 import { Link, useLocation } from 'react-router-dom';
 
 import styles from './header.module.css';
-import { useContext } from 'react'
 import { useTheme } from '../toggleTheme/ThemeContext';
 
-export function Header() {
+function Header() {
     const location = useLocation();
     const { theme } = useTheme()
     const activeClass = theme === 'light' ? styles.lightPageActive : styles.darkPageActive
@@ -26,3 +25,5 @@ export function Header() {
         </div>
     )
 }
+
+export default Header

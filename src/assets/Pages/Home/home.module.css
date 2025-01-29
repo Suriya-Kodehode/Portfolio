@@ -19,9 +19,15 @@
   
   .main {
     grid-area: main;
-    /* background-color: yellow; */
+    background-color: var(--background-color);
+    -webkit-text-stroke-width: var(--webkit-text-stroke-width);
+    -webkit-text-stroke-color: var(--webkit-text-stroke-color);
   }
-  
+  :global([data-theme="dark"]) .main {
+    --background-color: #3B3B3B;
+
+}
+
   .footer {
     grid-area: footer;
     /* background-color: purple; */

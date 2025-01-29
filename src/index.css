@@ -9,7 +9,9 @@
   -moz-osx-font-smoothing: grayscale;
 
   --background-color: #242424;
-  --text-color: rgba(255, 255, 255, 0.87)
+  --text-color: rgba(255, 255, 255, 0.87);
+
+  --purple-blue-gradient: conic-gradient(from 45deg at 50% 50%, #736ADC 72.0000010728836deg, #9A98B7 165.6000030040741deg, #3080DC 302.39999055862427deg);
 }
 
 [data-theme="light"] {
@@ -19,6 +21,8 @@
 }
 [data-theme="dark"] {
   color-scheme: dark;
+  --webkit-text-stroke-width: 1;
+  --webkit-text-stroke-color: #808080;
 }
 
 @media (prefers-color-scheme: light) {

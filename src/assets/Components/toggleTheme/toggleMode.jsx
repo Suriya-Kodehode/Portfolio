@@ -6,7 +6,7 @@ import { useTheme } from './ThemeContext.jsx';
 import lightImage from '/images/sun-light.svg';
 import darkImage from '/images/moon-dark.svg';
 
-export const ToggleMode = () => {
+const ToggleMode = () => {
     const { theme, toggleTheme } = useTheme()
 
     return (
@@ -29,3 +29,5 @@ export const ToggleMode = () => {
         </div>
     )
 }
+
+export default ToggleMode
