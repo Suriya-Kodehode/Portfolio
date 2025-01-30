@@ -18,7 +18,6 @@ const ToggleMode = () => {
                     aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
                     className='theme-toggle'
                 >
-                
                     <img 
                          id={styles.modeImage}  
                          src={theme === 'light' ? darkImage : lightImage} 

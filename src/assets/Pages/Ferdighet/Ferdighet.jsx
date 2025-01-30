@@ -12,13 +12,15 @@ function Ferdighet() {
                     <ToggleMode />
                     <Header />
                 </div>
-            </div>
-            <div className={styles.main}>
+                <div className={styles.main}>
 
-            </div>
-            <div className={styles.footer}>
+                </div>
+                <div className={styles.footer}>
 
+                </div>
             </div>
+            
+            
         </>
     )
 }

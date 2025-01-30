@@ -1,0 +1,58 @@
+
+.projectBoxLink {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    display: block;
+
+    /* z-index: 1; */
+}
+.projectBoxLink:hover {
+    color: inherit;
+}
+
+.projectBox {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+   
+
+    position: relative;
+    z-index: 0;
+}
+.projectBox::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    border-radius: 5px;
+    border: 8px solid transparent;
+    background: var(--yellow-green-gradient) border-box;
+    mask: 
+    linear-gradient(#000 0 0) padding-box,
+    linear-gradient(#000 0 0);
+    mask-composite: exclude; 
+    
+    z-index: -1;
+}
+
+.projectBox p {
+    display: flex;
+    width: 12.5rem;
+    height: 3.75rem;
+    margin: 0;
+    font-size: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+}
+.projectBox img {
+    width: 100%;
+    flex: 1 0 0;
+    align-self: stretch;
+}

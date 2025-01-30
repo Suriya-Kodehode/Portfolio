@@ -4,9 +4,9 @@
 .homeContainer {
     display: grid;
     width: 100vw;
-    height: 100vh;
+    max-height: 100%;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-rows: auto 6fr auto;
     grid-template-areas: 
     'header header header'
     'main main main'
@@ -14,22 +14,20 @@
   }
   .header {
     grid-area: header;
-    /* background-color: blue; */
+    height: 100%;
    }
   
   .main {
     grid-area: main;
-    background-color: var(--background-color);
     -webkit-text-stroke-width: var(--webkit-text-stroke-width);
     -webkit-text-stroke-color: var(--webkit-text-stroke-color);
   }
-  :global([data-theme="dark"]) .main {
+  /* :global([data-theme="dark"]) .main {
     --background-color: #3B3B3B;
-
-}
+  } */
 
   .footer {
     grid-area: footer;
-    /* background-color: purple; */
+    height: 100%;
   }
   /* /Layout container */

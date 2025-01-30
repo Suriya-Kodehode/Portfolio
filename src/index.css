@@ -12,12 +12,15 @@
   --text-color: rgba(255, 255, 255, 0.87);
 
   --purple-blue-gradient: conic-gradient(from 45deg at 50% 50%, #736ADC 72.0000010728836deg, #9A98B7 165.6000030040741deg, #3080DC 302.39999055862427deg);
+  --yellow-green-gradient: conic-gradient(from 180deg at 50% 50%, #CFDE0A 88.20000171661377deg, #FFF 200.8088994026184deg, rgba(106, 216, 43, 0.63) 320.4788088798523deg);
 }
 
 [data-theme="light"] {
   --background-color: #ffffff;
   --text-color: #213547;
   color-scheme: light;
+  --webkit-text-stroke-width: 1;
+  --webkit-text-stroke-color: #808080;
 }
 [data-theme="dark"] {
   color-scheme: dark;
@@ -40,9 +43,14 @@ a {
 a:hover {
   color: #535bf2;
 }
+html {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
   place-items: center;
   min-width: 320px;

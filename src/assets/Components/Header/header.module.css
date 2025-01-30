@@ -35,29 +35,35 @@
 .container nav ul li a {
     color: inherit;
 }
-.container nav ul li:hover {
-    color: #3380f7;
-    background-color: rgb(178, 196, 206);
-    transition: background-color 0.25s;
-}
+
 .container nav ul li:active {
-    color: #e24720;
+    /* color: #e24720; */
     background-color: rgb(202, 206, 178);
     transition: background-color 0.25s;
 }
 
 .container nav ul li.darkPageActive {
-    border: 2px solid #ff6347;
-    box-shadow: 0 0 5px #ff6347, 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    background-color: rgba(255, 99, 71, 0.1);
-    transition: all 0.3s ease;
+    background-color: #484848;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
+.container nav ul li.darkPageActive:hover {
+    background-color: rgb(103, 103, 104);
+    transition: background-color 0.25s;
+}
+:global([data-theme="dark"]) .container nav ul li:hover {
+    color: #FF6347;
+  }
 
 .container nav ul li.lightPageActive {
-    border: 2px solid #4caf50;
-    box-shadow: 0 0 5px #4caf50, 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    background-color: rgba(76, 175, 80, 0.1);
-    transition: all 0.3s ;
+    background-color: #748cf7fa;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
+.container nav ul li.lightPageActive:hover {
+    background-color: #4b5cf8;
+    transition: background-color 0.25s;
+}
+:global([data-theme="light"]) .container nav ul li:hover {
+    color: #FF6347;
+  }
