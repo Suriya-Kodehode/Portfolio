@@ -5,46 +5,7 @@ import ContactLink from '../Components/Links/Contact/ContactLink.jsx';
 
 import Me2024 from '/images/Me2024.svg'
 
-const projects = [
-    {
-        title: 'Gruppeprosjekt',
-        imageUrl: '/images/project_sample1.svg',
-        backgroundColor: '#894141',
-        url: 'https://suriya-kodehode.github.io/ViteNPM-prosjekt/',
-    },
-    {
-        title: 'Restaurantmenyen',
-        imageUrl: '/images/project_sample2.svg',
-        backgroundColor: '#4A4292',
-        url: 'https://suriya-kodehode.github.io/React-Oppgave-1-2---Restaurantmenyen/',
-    },
-    {
-        title: 'Placeholder, project nr. 3',
-        imageUrl: '/images/project_sample3.svg',
-        backgroundColor: '#125754',
-        url: 'blank',
-    },
-
-]
-
-const linkBox = [
-    {
-        text: 'Github',
-        iconLight: '/images/Icon=GitIcon, Color=White.svg',
-        iconDark: '/images/Icon=GitIcon, Color=Black.svg',
-        textTitleLight: 'Git icon lightmode',
-        textTitleDark: 'Git icon darkmode',
-        url: 'https://github.com/Suriya-Kodehode',
-    },
-    {
-        text: 'Last ned CV',
-        iconLight: '/images/Icon=Download, Color=White.svg',
-        iconDark: '/images/Icon=Download, Color=Black.svg',
-        textTitleLight: 'Download icon lightmode',
-        textTitleDark: 'Download icon darkmode',
-        url: '_blank',
-    }
-]
+import { projects, linkBox } from '../Components/Data.jsx'
 
 export default function Content() {
     

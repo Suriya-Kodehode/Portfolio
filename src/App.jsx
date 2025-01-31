@@ -11,11 +11,11 @@ function App() {
 
   return (
     <ThemeProvider>
-        <Router>
-        <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='/ferdighet' element={<Ferdighet/>}/>
-        </Routes>
+        <Router basename='/Portfolio-forsettelse-oppgave'>
+          <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/ferdighet' element={<Ferdighet/>}/>
+          </Routes>
       </Router>
     </ThemeProvider>
   )
