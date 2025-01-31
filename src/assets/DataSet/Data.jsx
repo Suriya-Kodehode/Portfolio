@@ -39,3 +39,7 @@ export const linkBox = [
         url: '_blank',
     }
 ]
+
+export const courseSkills = ['HTML', 'CSS', 'JavaScript', 'Figma', 'React']
+export const otherSkills = ['Unity', 'C#', 'Microsoft Certified: Azure Fundamentals', 'Microsoft 365 Certified: Fundamentals', 'Microsoft Office']
+export const selvTaughtSkills = ['GIMP', 'Inkscape', 'DaVinci Resolve']

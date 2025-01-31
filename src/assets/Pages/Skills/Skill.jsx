@@ -1,19 +1,20 @@
-import styles from './ferdighet.module.css'
+import styles from './Skill.module.css'
 
 import Header from '../../Components/Header/header.jsx'
 import ToggleMode from '../../Components/toggleTheme/toggleMode.jsx'
+import SkillContent from '../../Content/SkillContent.jsx'
 
-function Ferdighet() {
+function Skills() {
 
     return (
         <>
-            <div className={styles.ferdighetContainer}>
+            <div className={styles.skillContainer}>
                 <div className={styles.header}>
                     <ToggleMode />
                     <Header />
                 </div>
                 <div className={styles.main}>
-
+                    <SkillContent />
                 </div>
                 <div className={styles.footer}>
 
@@ -25,4 +26,4 @@ function Ferdighet() {
     )
 }
 
-export default Ferdighet
+export default Skills

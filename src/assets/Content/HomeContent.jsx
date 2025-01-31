@@ -1,11 +1,11 @@
 
-import styles from './Homepage.module.css';
+import styles from './HomeContent.module.css';
 import ProjectBox from '../Components/Links/Projects/projectContents.jsx';
 import ContactLink from '../Components/Links/Contact/ContactLink.jsx';
 
 import Me2024 from '/images/Me2024.svg'
 
-import { projects, linkBox } from '../Components/Data.jsx'
+import { projects, linkBox } from '../DataSet/Data.jsx'
 
 export default function Content() {
     

@@ -3,7 +3,7 @@ import styles from './home.module.css';
 
 import Header from '../../Components/Header/header.jsx'
 import ToggleMode from '../../Components/toggleTheme/toggleMode.jsx'
-import Content from '../../Content/Homepage.jsx'
+import Content from '../../Content/HomeContent.jsx'
 
 function Home() {
 

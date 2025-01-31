@@ -1,0 +1,53 @@
+.mainContainer {
+    display: flex;
+    min-height: auto;
+    max-height: 100%;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container h2,
+.container h3 {
+    margin: 0;
+}
+
+.subContainer {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.nestedContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nestedContainer p {
+    -webkit-text-stroke-width: var(--webkit-text-stroke-width);
+    -webkit-text-stroke-color: var(--webkit-text-stroke-color);
+}
+
+.otherRow1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from './assets/Components/toggleTheme/ThemeContext.jsx'
 
 import Home from './assets/Pages/Home/Home.jsx'
-import Ferdighet from './assets/Pages/Ferdighet/Ferdighet.jsx'
+import Skills from './assets/Pages/Skills/Skill.jsx'
 
 import './App.css'
 
@@ -14,7 +14,7 @@ function App() {
         <Router basename='/Portfolio-forsettelse-oppgave'>
           <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/ferdighet' element={<Ferdighet/>}/>
+            <Route path='/skills' element={<Skills/>}/>
           </Routes>
       </Router>
     </ThemeProvider>
