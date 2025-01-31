@@ -1,12 +1,7 @@
 
 import styles from './Homepage.module.css';
-import { useTheme } from '../Components/toggleTheme/ThemeContext.jsx'
-import ProjectBox from '../Components/Projects/projectContents.jsx';
-
-import gitIconBlack from '/images/Icon=GitIcon, Color=Black.svg'
-import gitIconWhite from '/images/Icon=GitIcon, Color=White.svg'
-import downloadIconBlack from '/images/Icon=Download, Color=Black.svg'
-import downloadIconWhite from '/images/Icon=Download, Color=White.svg'
+import ProjectBox from '../Components/Links/Projects/projectContents.jsx';
+import ContactLink from '../Components/Links/Contact/ContactLink.jsx';
 
 import Me2024 from '/images/Me2024.svg'
 
@@ -32,11 +27,27 @@ const projects = [
 
 ]
 
-export default function Content() {
-    const {theme}  = useTheme()
-    
-    
+const linkBox = [
+    {
+        text: 'Github',
+        iconLight: '/images/Icon=GitIcon, Color=White.svg',
+        iconDark: '/images/Icon=GitIcon, Color=Black.svg',
+        textTitleLight: 'Git icon lightmode',
+        textTitleDark: 'Git icon darkmode',
+        url: 'https://github.com/Suriya-Kodehode',
+    },
+    {
+        text: 'Last ned CV',
+        iconLight: '/images/Icon=Download, Color=White.svg',
+        iconDark: '/images/Icon=Download, Color=Black.svg',
+        textTitleLight: 'Download icon lightmode',
+        textTitleDark: 'Download icon darkmode',
+        url: '_blank',
+    }
+]
 
+export default function Content() {
+    
     return (
         <>
             <main className={styles.content}>
@@ -56,26 +67,23 @@ export default function Content() {
                             <div className={styles.infoLink}>
                                 <a href='mailto:suriya.kodehode@gmail.com'>suriya.kodehode@gmail.com</a>
                                 <div className={styles.linkTo}>
-                                    <div className={styles.linkBox}>
-                                        <p>GitHub</p>
-                                        <div className={styles.iconContainer}>
-                                            <img 
-                                            src={theme === 'light' ? gitIconBlack : gitIconWhite} 
-                                            alt={theme === 'light' ? 'Git icon black' : 'Git icon white'} />
-                                        </div>
-                                    </div>
-                                    <div className={styles.linkBox}>
-                                        <p>Last ned CV</p>
-                                        <div className={styles.iconContainer}>
-                                            <img 
-                                            src={theme === 'light' ? downloadIconBlack : downloadIconWhite} 
-                                            alt={theme === 'light' ? 'Download icon for dark mode' : 'Download icon for light mode'} />
-                                        </div>
-                                    </div>
+                                    {linkBox.map(({text, iconLight, iconDark, textTitleLight, textTitleDark, url}, index) => (
+                                        <ContactLink 
+                                            key={index}
+                                            text={text}
+                                            iconLight={iconLight}
+                                            iconDark={iconDark}
+                                            textTitleLight={textTitleLight}
+                                            textTitleDark={textTitleDark}
+                                            url={url}
+                                        />
+                                    ))
+
+                                    }
                                 </div>
-                            </div>
+                             </div>
+                         </div>
                         </div>
-                    </div>
                     <div className={styles.projectContainer}>
                         <h2>Prosjekter</h2>
                         <div className={styles.projectSubContainer}>

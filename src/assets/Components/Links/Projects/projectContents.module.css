@@ -4,11 +4,6 @@
     color: inherit;
     position: relative;
     display: block;
-
-    /* z-index: 1; */
-}
-.projectBoxLink:hover {
-    color: inherit;
 }
 
 .projectBox {
@@ -20,9 +15,9 @@
     gap: 10px;
     align-self: stretch;
    
-
+    border-radius: 5px;
     position: relative;
-    z-index: 0;
+    z-index: 1;
 }
 .projectBox::before {
     content: '';
@@ -37,7 +32,10 @@
     linear-gradient(#000 0 0);
     mask-composite: exclude; 
     
-    z-index: -1;
+    z-index: 0;
+}
+.projectBox:hover p {
+    color: var(--text-hover-darkmode-color);
 }
 
 .projectBox p {
@@ -51,6 +49,8 @@
 
     color: white;
 }
+
+
 .projectBox img {
     width: 100%;
     flex: 1 0 0;

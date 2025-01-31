@@ -18,7 +18,7 @@ function Header() {
                         <Link to='/'>Home</Link>
                     </li>
                     <li className={`${location.pathname === '/ferdighet' ? activeClass : ''}`}>
-                        <Link to='/ferdighet'>Ferdighet</Link>
+                        <Link to='/ferdighet'>Ferdigheter</Link>
                     </li>
                 </ul>
             </nav>

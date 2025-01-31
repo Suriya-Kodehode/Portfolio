@@ -2,7 +2,7 @@
 .ferdighetContainer {
     display: grid;
     width: 100vw;
-    height: 100vw;
+    min-height: 100vh;
     max-height: 100%;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: auto 6fr auto;
