@@ -20,10 +20,10 @@
 }
 
 [data-theme="dark"] {
-  color-scheme: dark !important; 
-  --background-color: #242424 !important;
-  --background: var(--dark-gradient-bg) !important;
-  --text-color: rgba(255, 255, 255, 0.87) !important;
+  color-scheme: dark; 
+  --background-color: #242424;
+  --background: var(--dark-gradient-bg);
+  --text-color: rgba(255, 255, 255, 0.87)
   
   --webkit-text-stroke-width: 1;
   --webkit-text-stroke-color: #808080;
