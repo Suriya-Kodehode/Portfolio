@@ -46,9 +46,7 @@
   /* For mobile screen */
 @media only screen 
 and (min-width: 360px) 
-and (max-width: 412px) 
-and (min-height: 800px) 
-and (max-height: 915px) 
+and (max-width: 1080px) 
 {
   #themeContainer {
     position: absolute;
