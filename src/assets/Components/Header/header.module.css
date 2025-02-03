@@ -69,18 +69,19 @@
 
   /* For mobile screen */
   @media only screen 
-  and (min-width: 360px) 
-  and (max-width: 1080px)
+  and (min-width: 300px) 
+  and (max-width: 480px)
   {
     .container {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 100vw;
         height: 4.4rem;
     }
     .container nav ul {
+
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -88,6 +89,8 @@
         flex-grow: 1;
     }
     .container nav ul li {
+        width: 7rem;
+        font-size: 1.2rem;
         margin: 0;
         padding: 0;
     }
