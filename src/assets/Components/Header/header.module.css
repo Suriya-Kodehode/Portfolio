@@ -28,7 +28,7 @@
     font-size: 1.6rem;
     font-weight: 600;
     padding: .5rem;
-    border-radius: 5px;
+    border-radius: 0.625rem;
     transition: color 0.25s;
     cursor: pointer;
     list-style: none;
@@ -39,24 +39,27 @@
 }
 
 .container nav ul li.darkPageActive {
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: #484848;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
-.container nav ul li.darkPageActive:hover {
+[data-theme='dark'] .container nav ul li:not(.darkPageActive):hover {
     background-color: rgb(103, 103, 104);
     transition: background-color 0.25s;
 }
+/* [data-theme='dark'] .container nav ul li.darkPageActive:hover {
+    background-color: #484848;
+} */
 [data-theme="dark"] .container nav ul li:hover {
     color: #FF6347;
   }
 
 .container nav ul li.lightPageActive {
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: #b3c6fb;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
-.container nav ul li.lightPageActive:hover {
+[data-theme='light'] .container nav ul li:not(.lightPageActive):hover {
     background-color: #92aefc;
     transition: background-color 0.25s;
 }

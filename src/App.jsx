@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { ThemeProvider } from './assets/Components/toggleTheme/ThemeContext.jsx'
 
-import Home from './assets/Pages/Home/Home.jsx'
-import Skills from './assets/Pages/Skills/Skill.jsx'
+import { ThemeProvider } from './assets/Components/toggleTheme/ThemeContext.jsx'
+import { Outlet } from 'react-router-dom'
+
+import Header from './assets/Components/Header/header.jsx'
+import ToggleMode from './assets/Components/toggleTheme/toggleMode.jsx'
 
 import './App.css'
 
@@ -11,12 +12,18 @@ function App() {
 
   return (
     <ThemeProvider>
-        <Router basename='/Portfolio-forsettelse-oppgave'>
-          <Routes>
-            <Route path='/' element={<Home />}/>
-            <Route path='/skills' element={<Skills/>}/>
-          </Routes>
-      </Router>
+      <div className='appContainer'>
+        <header>
+            <ToggleMode />
+            <Header />
+        </header>
+        <main>
+            <Outlet />
+        </main>
+        <footer>
+
+        </footer>
+      </div>
     </ThemeProvider>
   )
 }
