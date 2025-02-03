@@ -13,7 +13,7 @@ export default function SkillContent () {
 
     return (
         <>
-            <div className={styles.mainContainer}>
+            <main className={styles.mainContainer}>
                 <div className={styles.container}>
                     <h2>Ferdigheter</h2>
                     <div className={styles.subContainer}>
@@ -55,7 +55,7 @@ export default function SkillContent () {
                         </div>
                     </div>
                 </div>
-            </div>
+            </main>
         </>
     )
 }

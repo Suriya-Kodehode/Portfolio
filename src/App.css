@@ -52,6 +52,7 @@ and (max-width: 412px)
 and (min-height: 800px) 
 and (max-height: 915px) 
 {
+
   .appContainer {
     display: grid;
     width: 100vw;

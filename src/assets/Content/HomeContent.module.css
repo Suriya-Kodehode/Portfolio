@@ -188,8 +188,9 @@ and (max-height: 915px)
         gap: 1.25rem;
     }
     .frameContainer {
+        max-width: 80%;
         display: flex;
-        /* padding: 1.25rem; */
+        padding: 1.25rem;
         flex-direction: column;
         align-items: center;
         gap: 1.25rem;
@@ -199,13 +200,16 @@ and (max-height: 915px)
         display: flex;
         flex-flow: column;
         padding: 0;
+        gap: 0.9375;
         justify-content: center;
         align-items: center;
         align-self: center;
     }
-
-
-
+    .projectContainer h2 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    
     .projectSubContainer {
         display: flex;
         flex-flow: column;
@@ -215,5 +219,31 @@ and (max-height: 915px)
         align-items: center;
         gap: 0.9375rem;
         align-self: stretch;
-        }
+    }
+    .imgText {
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        margin: auto;
+    }
+    .imgText h2 {
+        font-size: 2rem;
+    }
+
+    .myContact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0.625rem;
+            flex: 1 0 0;
+            align-self: center;
+    }
+    .myContact h2 {
+        font-size: 2rem;
+        margin: 0;
+    }
 }

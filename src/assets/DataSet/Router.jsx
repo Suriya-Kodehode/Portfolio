@@ -1,8 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
+import { base_url as base } from "../../../config"
 
-import App from "../App.jsx";
-import Content from "./Content/HomeContent.jsx";
-import SkillContent from "./Content/SkillContent.jsx";
+import App from "../../App.jsx";
+import Content from "../Content/HomeContent.jsx";
+import SkillContent from "../Content/SkillContent.jsx";
 
 
 const routes = createBrowserRouter(
@@ -28,7 +29,7 @@ const routes = createBrowserRouter(
         } 
     ],
     {
-        basename: '/Portfolio-forsettelse-oppgave',
+        basename: base,
     }
 )
 

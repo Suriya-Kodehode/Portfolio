@@ -91,3 +91,66 @@
 .otherRow1 p {
     margin-bottom: 0;
 }
+
+/* For mobile screen */
+@media only screen 
+and (min-width: 360px) 
+and (max-width: 412px) 
+and (min-height: 800px) 
+and (max-height: 915px) 
+{
+    .mainContainer {
+        width: 100%;
+        min-height: fit-content;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        gap: 1.25rem;
+    }
+
+    .container {
+        max-width: 80%;
+        display: flex;
+        padding: 1.25rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        align-self: center;
+    
+        position: relative;
+        border-radius: 0.5rem;
+        z-index: 1;
+    }
+    .container::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+    
+        border-radius: inherit;
+        border: solid 8px transparent;
+        
+        mask:
+        linear-gradient(#000 0 0) padding-box, 
+        linear-gradient(#000 0 0);
+        mask-composite: exclude;
+        z-index: 0;
+    }
+
+    .subContainer {
+        display: flex;
+        /* padding: 1.25rem; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        align-self: stretch;
+    
+        position: relative;
+        border-radius: 0.5rem;
+        z-index: 1;
+    }
+}
