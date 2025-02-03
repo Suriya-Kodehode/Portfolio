@@ -18,7 +18,30 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    z-index: 1;
 }
+.container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+
+    border-radius: inherit;
+    border: solid 8px transparent;
+    background: var(--yellow-green-purple-gradient);
+    mask:
+    linear-gradient(#000 0 0) padding-box, 
+    linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    z-index: 0;
+
+}
+
+
+
 .container h2,
 .container h3 {
     margin: 0;

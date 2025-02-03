@@ -14,6 +14,7 @@
   --dark-gradient-bg: linear-gradient(270deg, #444 14.5%, #373636 53%, #242424 92%);
   --purple-blue-gradient: conic-gradient(from 45deg at 50% 50%, #736ADC 72.0000010728836deg, #9A98B7 165.6000030040741deg, #3080DC 302.39999055862427deg);
   --yellow-green-gradient: conic-gradient(from 180deg at 50% 50%, #CFDE0A 88.20000171661377deg, #FFF 200.8088994026184deg, rgba(106, 216, 43, 0.63) 320.4788088798523deg);
+  --yellow-green-purple-gradient: conic-gradient(from 180deg at 50% 50%, #CFDE0A 41.28765642642975deg, #9D00FF 111.93961143493652deg, #676767 180deg, #736ADC 246.71153783798218deg, #6AD82B 318.437819480896deg);
 
   --text-hover-darkmode-color: #bbbaba;
   --text-hover-lightmode-color: #798dfd; 
