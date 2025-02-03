@@ -40,12 +40,11 @@ export default function Content() {
                                             url={url}
                                         />
                                     ))
-
                                     }
                                 </div>
-                             </div>
-                         </div>
+                            </div>
                         </div>
+                    </div>
                     <div className={styles.projectContainer}>
                         <h2>Prosjekter</h2>
                         <div className={styles.projectSubContainer}>

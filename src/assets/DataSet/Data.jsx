@@ -13,12 +13,12 @@ export const projects = [
         backgroundColor: '#4A4292',
         url: 'https://suriya-kodehode.github.io/React-Oppgave-1-2---Restaurantmenyen/',
     },
-    {
-        title: 'Placeholder, project nr. 3',
-        imageUrl: '/Portfolio-forsettelse-oppgave/images/project_sample3.svg',
-        backgroundColor: '#125754',
-        url: 'blank',
-    },
+    // {
+    //     title: 'Placeholder, project nr. 3',
+    //     imageUrl: '/Portfolio-forsettelse-oppgave/images/project_sample3.svg',
+    //     backgroundColor: '#125754',
+    //     url: 'blank',
+    // },
 ]
 
 export const linkBox = [
@@ -36,7 +36,7 @@ export const linkBox = [
         iconDark: '/Portfolio-forsettelse-oppgave/images/Icon=Download, Color=Black.svg',
         textTitleLight: 'Download icon lightmode',
         textTitleDark: 'Download icon darkmode',
-        url: '_blank',
+        url: '/Portfolio-forsettelse-oppgave/CV-Suriya 2025.pdf',
     }
 ]
 
