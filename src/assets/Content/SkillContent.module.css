@@ -61,7 +61,14 @@
 .container h3 {
     margin: 1.25rem;
 }
-
+.midContainer {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
 .subContainer {
     display: flex;
     padding: 1.25rem;
