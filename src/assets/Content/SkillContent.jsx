@@ -17,38 +17,40 @@ export default function SkillContent () {
         <>
             <main className={styles.mainContainer}>
                 <div className={styles.container}>
-                    <h2>Ferdigheter</h2>
-                    <div className={styles.subContainer}>
-                        <h3>Ferdigheter ved kurset</h3>
-                        <div className={styles.nestedContainer}>
-                            <TextAndIcon textLogo={courseSkills}/>
+                    <div className={styles.midContainer}>
+                        <h2>Ferdigheter</h2>
+                        <div className={styles.subContainer}>
+                            <h3>Ferdigheter ved kurset</h3>
+                            <div className={styles.nestedContainer}>
+                                <TextAndIcon textLogo={courseSkills}/>
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.subContainer}>
-                        <h3>Andre ferdigheter</h3>
-                        <div className={styles.nestedContainer}>
-                            <div className={styles.otherSkills}>
-                                <div className={styles.otherRow1}> 
-                                    <TextAndIcon textLogo={otherRow1}/>
-                                </div>
-                                <div>
-                                    <TextAndIcon textLogo={otherRow2}/>
-                                </div>
-                                <div>
-                                    <TextAndIcon textLogo={otherRow3}/>
+                        <div className={styles.subContainer}>
+                            <h3>Andre ferdigheter</h3>
+                            <div className={styles.nestedContainer}>
+                                <div className={styles.otherSkills}>
+                                    <div className={styles.otherRow1}> 
+                                        <TextAndIcon textLogo={otherRow1}/>
+                                    </div>
+                                    <div>
+                                        <TextAndIcon textLogo={otherRow2}/>
+                                    </div>
+                                    <div>
+                                        <TextAndIcon textLogo={otherRow3}/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.subContainer}>
-                        <h3>Selvlært</h3>
-                        <div className={styles.nestedContainer}>
-                            <div className={styles.selvTaughtSkills}>
-                                <div className={styles.selvRow1}>
-                                    <TextAndIcon textLogo={selvRow1}/>
-                                </div>
-                                <div>
-                                    <TextAndIcon textLogo={selvRow2}/>
+                        <div className={styles.subContainer}>
+                            <h3>Selvlært</h3>
+                            <div className={styles.nestedContainer}>
+                                <div className={styles.selvTaughtSkills}>
+                                    <div className={styles.selvRow1}>
+                                        <TextAndIcon textLogo={selvRow1}/>
+                                    </div>
+                                    <div>
+                                        <TextAndIcon textLogo={selvRow2}/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
