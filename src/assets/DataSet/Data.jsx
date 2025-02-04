@@ -40,6 +40,61 @@ export const linkBox = [
     }
 ]
 
-export const courseSkills = ['HTML', 'CSS', 'JavaScript', 'Figma', 'React']
-export const otherSkills = ['Unity', 'C#', 'Microsoft Certified: Azure Fundamentals', 'Microsoft 365 Certified: Fundamentals', 'Microsoft Office']
-export const selvTaughtSkills = ['GIMP', 'Inkscape', 'DaVinci Resolve']
+export const courseSkills = [
+    {
+        text: 'HTML',
+        icon: `${base}/images/HTML icon.svg`,
+    },
+    {
+        text: 'CSS',
+        icon: `${base}/images/CSS icon.svg`,
+    },
+    {
+        text: 'JavaScript',
+        icon: `${base}/images/JavaScript icon.svg`,
+    },
+    {
+        text: 'Figma',
+        icon: `${base}/images/Figma icon.svg`,
+    },
+    {
+        text: 'React',
+        icon: `${base}/images/React icon.svg`,
+    },
+]
+export const otherSkills = [
+    {
+        text: 'Unity',
+        icon: `${base}/images/Unity icon.svg`,
+    },
+    {
+        text: 'C#',
+        icon: `${base}/images/CSharp icon.svg`,
+    },
+    {
+        text: 'Microsoft Certified: Azure Fundamentals',
+        icon: null,
+    },
+    {
+        text: 'Microsoft 365 Certified: Fundamentals',
+        icon: null,
+    },
+    {
+        text: 'Microsoft Office',
+        icon: `${base}/images/Microsoft Office icon.svg`,
+    }, 
+]
+export const selvTaughtSkills = [
+    {
+        text: 'GIMP',
+        icon: `${base}/images/GIMP icon.svg`,
+    },
+    {
+        text: 'Inkscape',
+        icon: `${base}/images/Inkscape icon.svg`
+    },
+    {
+        text: 'DaVinci Resolve',
+        icon: `${base}/images/DaVinci Resolve icon.svg`
+    },
+]

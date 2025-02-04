@@ -19,11 +19,23 @@
     align-items: center;
     gap: 0.625rem;
 
-    position: relative;
+    /* position: relative; */
     border-radius: 0.5rem;
     z-index: 1;
+    
 }
-.container::before {
+[data-theme='light'] .container {
+    text-shadow: 
+    1px 1px 3px rgba(255, 255, 255, 0.6),
+    2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+[data-theme='dark'] .container {
+    text-shadow: 
+    1px 1px 2px rgba(255, 255, 255, 0.2),
+    2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* .container::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -36,16 +48,18 @@
     linear-gradient(#000 0 0);
     mask-composite: exclude;
     z-index: 0;
-}
-[data-theme='dark'] .container::before {
+} */
+/* [data-theme='dark'] .container::before {
     background: var(--purple-blue-gradient);
 }
 [data-theme='light'] .container::before {
     background: var(--orange-gradient);
-}
-.container h2,
+} */
+ .container h2 {
+    margin: 1rem;
+ }
 .container h3 {
-    margin: 0;
+    margin: 1.25rem;
 }
 
 .subContainer {
@@ -81,6 +95,9 @@
     -webkit-text-stroke-width: var(--webkit-text-stroke-width);
     -webkit-text-stroke-color: var(--webkit-text-stroke-color);
 }
+.nestedContainer img {
+    width: 1.875rem;
+}
 
 .otherRow1 {
     display: flex;
@@ -88,8 +105,18 @@
     align-items: center;
     gap: 1.25rem;
 }
-.otherRow1 p {
-    margin-bottom: 0;
+
+.selvTaughtSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.selvRow1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
 }
 
 /* For mobile screen */
@@ -119,11 +146,11 @@ and (max-width: 480px)
         gap: 1.25rem;
         align-self: center;
     
-        position: relative;
+        /* position: relative; */
         border-radius: 0.5rem;
         z-index: 1;
     }
-    .container::before {
+    /* .container::before {
         content: '';
         position: absolute;
         inset: 0;
@@ -136,7 +163,7 @@ and (max-width: 480px)
         linear-gradient(#000 0 0);
         mask-composite: exclude;
         z-index: 0;
-    }
+    } */
     .container h2 {
         font-size: 2rem;
     }
