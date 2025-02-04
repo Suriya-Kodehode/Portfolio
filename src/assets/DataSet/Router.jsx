@@ -18,7 +18,7 @@ const routes = createBrowserRouter(
                     element: <Content />
                 },
                 {
-                    path: '/skills',
+                    path: "/skills",
                     element: <SkillContent />
                 }
             ]
