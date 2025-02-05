@@ -1,19 +1,21 @@
 
 .projectBoxLink {
+    width: 18rem;
+    height: 20rem;
     text-decoration: none;
-    color: inherit;
     position: relative;
-    display: block;
+    display: flex;
+    overflow-x: auto;
 }
 
 .projectBox {
     display: flex;
     padding: 1rem;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 0.625rem;
-    align-self: stretch;
+    /* align-self: stretch; */
    
     border-radius: 0.3125rem;
     position: relative;
@@ -40,9 +42,8 @@
 }
 
 .projectBox p {
-    display: flex;
     width: 14.375rem;
-    height: 3.75rem;
+    height: fit-content;
     margin: 0;
     font-size: 1.5rem;
     flex-direction: column;
@@ -56,10 +57,18 @@
     transform: scale(1.01);
     z-index: 1;
 }
-
+.projectBox span {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    color: white;
+}
+.projectBox span:hover {
+    color: white;
+}
 
 .projectBox img {
     width: 100%;
-    flex: 1 0 0;
-    align-self: stretch;
+    align-self: baseline;
 }

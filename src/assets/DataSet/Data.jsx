@@ -6,12 +6,14 @@ export const projects = [
         imageUrl: `${base}/images/project_sample1.svg`,
         backgroundColor: '#894141',
         url: 'https://suriya-kodehode.github.io/ViteNPM-prosjekt/',
+        description: 'En gruppeoppgave som jeg har jobbet med andre studenter, målet var å bruke NPM pakke i React',
     },
     {
         title: 'Restaurantmenyen',
         imageUrl: `${base}/images/project_sample2.svg`,
         backgroundColor: '#4A4292',
         url: 'https://suriya-kodehode.github.io/React-Oppgave-1-2---Restaurantmenyen/',
+        description: 'Laget mat menyer ved bruk av grid-layout i React',
     },
     // {
     //     title: 'Placeholder, project nr. 3',
