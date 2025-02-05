@@ -15,7 +15,7 @@ export const projects = [
     },
     // {
     //     title: 'Placeholder, project nr. 3',
-    //     imageUrl: '/Portfolio-forsettelse-oppgave/images/project_sample3.svg',
+    //     imageUrl: `${base}/images/project_sample3.svg`,
     //     backgroundColor: '#125754',
     //     url: 'blank',
     // },

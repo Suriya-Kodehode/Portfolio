@@ -168,13 +168,13 @@ main.content {
 }
 .projectSubContainer {
     display: flex;
-    height: 13.125rem;
+    flex-wrap: wrap;
     padding: 0.625rem;
     justify-content: center;
     align-items: center;
     gap: 3.75rem;
     align-self: stretch;
-    }
+}
 /* /Project area */
 
 /* For mobile screen */
