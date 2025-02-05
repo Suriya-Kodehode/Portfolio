@@ -21,7 +21,7 @@ export default function Content() {
                             </div>
                             <div className={styles.imgText}>
                                 <h2>Suriya Suntiviraporn</h2>
-                                <p>Hei! jeg heter Suriya,  en webdeveloper med omtrent 6 måneder erfering fra kurset ved Jobbloop hvor jeg har lært JavaScript, HTML, CSS og Figma. </p>
+                                <p>Hei! jeg heter Suriya, en webdeveloper med omtrent 6 måneder erfering fra kurset ved Kodehode hvor jeg har lært JavaScript, HTML, CSS og Figma. </p>
                             </div>
                         </div>
                         <div className={styles.myContact}>
