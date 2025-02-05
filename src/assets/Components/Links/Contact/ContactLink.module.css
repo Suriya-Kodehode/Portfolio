@@ -38,13 +38,21 @@ a.linkBox {
     background: var(--orange-gradient);
 }
 
-.linkBox p {
+.text {
     -webkit-text-stroke-width: var(--webkit-text-stroke-width);
     -webkit-text-stroke-color: var(--webkit-text-stroke-color);
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0;
+
+    transition: transform 0.05s;
+    z-index: 1;
 }
+.text:hover {
+    transform: scale(1.01);
+    z-index: 1;
+}
+
 
 
 .iconContainer {

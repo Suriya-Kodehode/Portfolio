@@ -132,9 +132,12 @@ main.content {
 
     font-size: 1.2rem;
     font-weight: 600;
+
+    transition: transform 0.05s;
 }
 .infoLink a:hover {
     color: #bbbaba;
+    transform: scale(1.01);
 }
 [data-theme='light'] .infoLink a:hover {
     color: #798dfd;

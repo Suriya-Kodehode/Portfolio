@@ -15,10 +15,10 @@ function Header() {
            <nav>
                 <ul>
                     <li className={`${location.pathname === '/' ? activeClass : ''}`}>
-                        <Link to='/'>Forside</Link>
+                        <Link to='/'><p>Forside</p></Link>
                     </li>
                     <li className={`${location.pathname === '/skills' ? activeClass : ''}`}>
-                        <Link to='/skills'>Ferdigheter</Link>
+                        <Link to='/skills'><p>Ferdigheter</p></Link>
                     </li>
                 </ul>
             </nav>

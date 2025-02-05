@@ -6,7 +6,7 @@ const ContactLink = ({ text, iconLight, iconDark,textTitleLight, textTitleDark, 
     return (
         <>
             <a href={url} target='_blank' rel='nooepener noreferrer' className={styles.linkBox}>
-                <p>{text}</p>
+                <p className={styles.text}>{text}</p>
                 <div className={styles.iconContainer}>
                     <img 
                     src={theme === 'light' ? iconDark : iconLight} 

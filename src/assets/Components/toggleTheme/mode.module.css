@@ -14,8 +14,9 @@
 
 /* Theme Button */
 #modeImage {
-    width: 2em;
-    height: 2em;
+  width: 2rem;
+  height: 2rem;
+
 }
 
 #themeButton {
@@ -28,13 +29,11 @@
     background-color: inherit;
     cursor: pointer;
     transition: border-color 0.25s;
-   
   }
 
   #themeButton:hover {
     border-color: none;
     background-color: rgba(128, 128, 128, .5);
-    
   }
   #themeButton:focus,
   #themeButton:focus-visible {

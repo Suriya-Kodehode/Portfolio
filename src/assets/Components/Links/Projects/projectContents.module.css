@@ -50,6 +50,11 @@
 
     color: white;
     z-index: 1;
+    transition: transform 0.05s;
+}
+.projectBox p:hover {
+    transform: scale(1.01);
+    z-index: 1;
 }
 
 
