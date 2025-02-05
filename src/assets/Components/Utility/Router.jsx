@@ -1,11 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import { base_url as base } from "../../../config"
+import { base_url as base } from "../../../../config.js"
 
 import styles from './Router.module.css'
 
-import App from "../../App.jsx";
-import Content from "../Content/HomeContent.jsx";
-import SkillContent from "../Content/SkillContent.jsx";
+import App from "../../../App.jsx";
+import Content from "../../Content/HomeContent.jsx";
+import SkillContent from "../../Content/SkillContent.jsx";
 
 
 const routes = createBrowserRouter(
