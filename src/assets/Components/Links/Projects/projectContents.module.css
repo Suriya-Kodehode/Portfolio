@@ -23,6 +23,7 @@
     content: '';
     position: absolute;
     inset: 0;
+    padding: 1rem;
 
     border-radius: 0.3125rem;
     border: 8px solid transparent;
@@ -40,7 +41,7 @@
 
 .projectBox p {
     display: flex;
-    width: 12.5rem;
+    width: 14.375rem;
     height: 3.75rem;
     margin: 0;
     font-size: 1.5rem;
@@ -48,6 +49,7 @@
     justify-content: center;
 
     color: white;
+    z-index: 1;
 }
 
 

@@ -9,6 +9,8 @@
     gap: 1.25rem;
     flex-shrink: 0;
     align-self: stretch;
+
+    font-family: 'Quicksand', serif;
 }
 
 .container {
@@ -98,7 +100,7 @@
 }
 .nestedContainer p {
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 700;
     -webkit-text-stroke-width: var(--webkit-text-stroke-width);
     -webkit-text-stroke-color: var(--webkit-text-stroke-color);
 }

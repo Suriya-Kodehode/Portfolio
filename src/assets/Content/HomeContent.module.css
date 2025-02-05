@@ -9,6 +9,8 @@ main.content {
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
+
+    font-family: 'Quicksand', serif;
 }
 
 .frameContainer {
@@ -97,6 +99,7 @@ main.content {
 .imgText p {
     text-align: center;
     font-size: 1.25rem;
+    font-weight: 600;
     margin: 0;
 }
 /* /Image area */
@@ -128,6 +131,7 @@ main.content {
     transition: color 0.3s ease;
 
     font-size: 1.2rem;
+    font-weight: 600;
 }
 .infoLink a:hover {
     color: #bbbaba;
