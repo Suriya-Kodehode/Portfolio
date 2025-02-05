@@ -2,6 +2,9 @@
 :root {
     /* customBorder */
     --dark-silver-gradient: linear-gradient(180deg, #202020 1%, #444 40%, #6B6B6B 55%, #949494 75%, #C0C0C0 90%);
+    --lightgreen-darkblue-gradient: linear-gradient(156deg, #CAFF4E 7.19%, #CBFFFB 49.52%, #2A366C 92.69%);
+    --white-orange-red-gradient: linear-gradient(157deg, #FFF 7.46%, #F5AF36 47.87%, #FF313C 92.54%);
+
     --orange-gradient: conic-gradient(from 180deg at 50% 50%, #D7AC00 36.0000005364418deg, #F33636 142.20000386238098deg, #C2E004 216.00000858306885deg, #FA51AE 325.7999897003174deg);
     --purple-blue-gradient: conic-gradient(from 45deg at 50% 50%, #736ADC 72.0000010728836deg, #9A98B7 165.6000030040741deg, #3080DC 302.39999055862427deg);
     --yellow-green-gradient: conic-gradient(from 180deg at 50% 50%, #CFDE0A 88.20000171661377deg, #FFF 200.8088994026184deg, rgba(106, 216, 43, 0.63) 320.4788088798523deg);
@@ -10,6 +13,7 @@
     /* customBackground */
     --lightblue-gradient-bg: linear-gradient(135deg, #e6f4fc 0%, #b0b1f6 100%);
     --dark-gradient-bg: linear-gradient(90deg, #242424 0%, #2B2A2A 100%);
+    --dark-gradient-img-bg: url('../../../public/images/BackgroundImage/Dark-background.svg');
 
     --dark-to-gray-bg: linear-gradient(90deg, #333131 50.5%, #5F5D5D 89.5%, rgba(131, 131, 131, 0.56) 100%);
     --dark-to-gray-bg-alt: linear-gradient(90deg, #333131 46.5%, #474646 80.5%, rgba(101, 101, 101, 0.56) 100%);

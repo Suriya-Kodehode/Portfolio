@@ -68,12 +68,18 @@ main.content {
 
     border-radius: inherit;
     border: 5px solid transparent;
-    background: var(--dark-silver-gradient) border-box;
+    
     mask:
     linear-gradient(#000 0 0) padding-box, 
     linear-gradient(#000 0 0);
     mask-composite: exclude;
     z-index: 0;
+}
+[data-theme='dark'] .imgContainer::before {
+    background: var(--lightgreen-darkblue-gradient) border-box;
+}
+[data-theme='light'] .imgContainer::before {
+    background: var(--white-orange-red-gradient) border-box;
 }
 .imgContainer img {
     width: 100%;
