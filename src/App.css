@@ -82,3 +82,34 @@ and (max-width: 320px)
     overflow-x: auto;
   }
 }
+@media only screen 
+and (min-width: 482px)
+and (max-width: 720px)
+{
+  #root {
+    overflow-x: auto;
+  }
+  .appContainer {
+    display: grid;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+  }
+  head {
+    grid-area: header;
+    -webkit-text-stroke-width: var(--webkit-text-stroke-width);
+    -webkit-text-stroke-color: var(--webkit-text-stroke-color);
+  }
+  main {
+    grid-area: main;
+  }
+  footer {
+    grid-area: footer;
+  }
+}
