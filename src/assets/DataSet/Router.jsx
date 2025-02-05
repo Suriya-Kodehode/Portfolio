@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import { base_url as base } from "../../../config"
 
+import styles from './Router.module.css'
+
 import App from "../../App.jsx";
 import Content from "../Content/HomeContent.jsx";
 import SkillContent from "../Content/SkillContent.jsx";
@@ -11,7 +13,7 @@ const routes = createBrowserRouter(
         {
         path: '/',
         element: <App/>,
-        errorElement: <p>Error</p>,
+        errorElement: <p className={styles.text}>Error</p>,
         children: [
                 {
                     index: true,
@@ -25,7 +27,7 @@ const routes = createBrowserRouter(
         }, 
         {
             path: '*',
-            element: <p>Page not found</p>
+            element: <p className={styles.text}>Page not found</p>
         } 
     ],
     {
