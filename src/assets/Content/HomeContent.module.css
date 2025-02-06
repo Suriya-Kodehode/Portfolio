@@ -76,10 +76,10 @@ main.content {
     z-index: 0;
 }
 [data-theme='dark'] .imgContainer::before {
-    background: var(--lightgreen-darkblue-gradient) border-box;
+    background: var(--dark-profile-border-gradient) border-box;
 }
 [data-theme='light'] .imgContainer::before {
-    background: var(--white-orange-red-gradient) border-box;
+    background: var(--light-profile-border-gradient) border-box;
 }
 .imgContainer img {
     width: 100%;
@@ -142,11 +142,11 @@ main.content {
     transition: transform 0.05s;
 }
 .infoLink a:hover {
-    color: #bbbaba;
+    color: var(--text-hover-darkmode-color);
     transform: scale(1.01);
 }
 [data-theme='light'] .infoLink a:hover {
-    color: #798dfd;
+    color: var(--text-hover-lightmode-color);
 }
 
 .linkTo {

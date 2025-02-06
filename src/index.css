@@ -11,16 +11,16 @@
 
 [data-theme="light"] {
   color-scheme: light;
-  --background-color: #e6f4fc;
-  --background: var(--lightblue-gradient-bg);
-  --text-color: #213547;
+  --background-color: var(--light-background-default);
+  --background: var(--light-background-gradient);
+  --text-color: var(--text-lightmode-color);
 }
 
 [data-theme="dark"] {
   color-scheme: dark; 
-  --background-color: #242424;
-  --background: var(--darkblue-gradient-bg);
-  --text-color: rgba(255, 255, 255, 0.87)
+  --background-color: var(--dark-background-default);
+  --background: var(--dark-background-gradient);
+  --text-color: var(--text-darkmode-color);
 }
 
 /* @media (prefers-color-scheme: dark) {

@@ -12,23 +12,29 @@
     font-display: swap;
 }
 [data-theme='dark'] .container {
-    background-color: #0d1b5a;
-    border-bottom: 5px solid #224bac;
+    background-color: inherit;
+    border-bottom: 3px solid #bbc6ff;
 }
 [data-theme='light'] .container {
-    background-color: #c5d4f8;
-    border-bottom: 5px solid #c4d5fc;
+    background-color: inherit;
+    border-bottom: 3px solid #fcfcd4;
 }
 
 .container nav {
+    width: fit-content;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 .container nav ul {
+    width: fit-content;
     display: flex;
+    width: fit-content;
     flex-flow: row wrap;
     justify-content: center;
-    flex-grow: 1;
+    padding: 0;
 }
 .container nav ul li {
     width: 9.375rem;
@@ -50,44 +56,37 @@
 .container nav ul li p {
     margin: 0;
 }
-.container nav ul li p:hover {
-    transform: scale(1.1);
-    color: #FF6347;
+[data-theme='dark'] .container nav ul li p {
+    text-shadow: var(--text-shadow-darkmode); 
+}
+[data-theme='light'] .container nav ul li p {
+    text-shadow: var(--text-shadow-lightmode); 
 }
 
+.container nav ul li p:hover {
+    transform: scale(1.1);
+    
+}
+[data-theme='dark'] .container nav ul li p:hover {
+    color: var(--text-hover-darkmode-color);
+}
+[data-theme='light'] .container nav ul li p:hover {
+    color: var(--text-hover-lightmode-color);
+}
 .container nav ul li a{
     color: inherit;
 }
 
 .container nav ul li.darkPageActive {
-    border-radius: 0.625rem;
-    background-color: #1c4092;
+    border-radius: 0.625rem 0.625rem 0 0;
+    background: var(--dark-header-gradient-bg);
     transition: color 0.3s ease, background-color 0.3s ease;
 }
-.darkPageActive p {
-    text-decoration: underline;
-}
-
-[data-theme='dark'] .container nav ul li:not(.darkPageActive):hover {
-    background-color: #2253c5;
-    transition: background-color 0.25s;
-}
-/* [data-theme='dark'] .container nav ul li.darkPageActive:hover {
-    background-color: #484848;
-} */
 
 .container nav ul li.lightPageActive {
-    border-radius: 0.625rem;
-    background-color: #b3c6fb;
+    border-radius: 0.625rem 0.625rem 0 0;
+    background: var(--light-header-gradient-bg);
     transition: color 0.3s ease, background-color 0.3s ease;
-}
-.lightPageActive p {
-    text-decoration: underline;
-}
-
-[data-theme='light'] .container nav ul li:not(.lightPageActive):hover {
-    background-color: #92aefc;
-    transition: background-color 0.25s;
 }
 
   /* For mobile screen */
@@ -110,11 +109,18 @@
         justify-content: center;
         padding: 0;
         flex-grow: 1;
+        margin: 0;
     }
     .container nav ul li {
-        width: 7rem;
+        display: flex;
+        justify-content: center;
+        width: 7.8125rem;
         font-size: 1.2rem;
         margin: 0;
         padding: 0;
+    }
+    .container nav ul li p {
+        width: fit-content;
+        text-align: center;
     }
   }

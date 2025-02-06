@@ -5,7 +5,6 @@
     text-decoration: none;
     position: relative;
     display: flex;
-    overflow-x: auto;
 }
 
 .projectBox {
@@ -29,7 +28,6 @@
 
     border-radius: 0.3125rem;
     border: 8px solid transparent;
-    background: var(--yellow-green-gradient) border-box;
     mask: 
     linear-gradient(#000 0 0) padding-box,
     linear-gradient(#000 0 0);
@@ -37,8 +35,18 @@
     
     z-index: 0;
 }
-.projectBox:hover p {
+[data-theme='dark'] .projectBox::before {
+    background: var(--dark-project-border-gradient) border-box;
+}
+[data-theme='light'] .projectBox::before {
+    background: var(--light-project-border-gradient) border-box;
+}
+
+[data-theme='dark'] .projectBox:hover p {
     color: var(--text-hover-darkmode-color);
+}
+[data-theme='light'] .projectBox:hover p {
+    color: var(--text-hover-lightmode-color);
 }
 
 .projectBox p {
@@ -53,16 +61,15 @@
     z-index: 1;
     transition: transform 0.05s;
 }
-.projectBox p:hover {
-    transform: scale(1.01);
-    z-index: 1;
-}
+
 .projectBox span {
     width: auto;
     margin: 0;
-    padding: 0;
+    padding: 0 0.5rem;
     z-index: 1;
     color: white;
+
+    overflow-x: auto;
 }
 .projectBox span:hover {
     color: white;

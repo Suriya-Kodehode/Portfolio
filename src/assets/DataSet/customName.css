@@ -1,32 +1,37 @@
 
 :root {
     /* customBorder */
-    --dark-silver-gradient: linear-gradient(180deg, #202020 1%, #444 40%, #6B6B6B 55%, #949494 75%, #C0C0C0 90%);
-    --lightgreen-darkblue-gradient: linear-gradient(156deg, #CAFF4E 7.19%, #CBFFFB 49.52%, #2A366C 92.69%);
-    --white-orange-red-gradient: linear-gradient(157deg, #FFF 7.46%, #F5AF36 47.87%, #FF313C 92.54%);
+    --dark-profile-border-gradient: linear-gradient(145deg, #5A6BB4 6%, #ECEEFF 91.36%);
+    --light-profile-border-gradient: linear-gradient(154deg, #A5E8FF 8.38%, #E6F4F1 50%, #69F4FE 91.62%);
+    
+    --dark-contact-border-gradient: linear-gradient(101deg, #E25C8D 5.52%, #FF8471 49.77%, #FFBD5E 93.54%);
+    --dark-contact-background: #6c8bf5;
+    --light-contact-border-gradient: linear-gradient(105deg, #00C6C0 0.43%, #FCFCD4 50.04%, #C7CEF8 99.57%);
+    --light-contact-background: #e9efff;
 
-    --orange-gradient: conic-gradient(from 180deg at 50% 50%, #D7AC00 36.0000005364418deg, #F33636 142.20000386238098deg, #C2E004 216.00000858306885deg, #FA51AE 325.7999897003174deg);
-    --purple-blue-gradient: conic-gradient(from 45deg at 50% 50%, #736ADC 72.0000010728836deg, #9A98B7 165.6000030040741deg, #3080DC 302.39999055862427deg);
-    --yellow-green-gradient: conic-gradient(from 180deg at 50% 50%, #CFDE0A 88.20000171661377deg, #FFF 200.8088994026184deg, rgba(106, 216, 43, 0.63) 320.4788088798523deg);
+    --dark-project-border-gradient: linear-gradient(180deg, #FFBD5E 0%, #FF8471 50.28%, #994D9F 100%);
+    --light-project-border-gradient: linear-gradient(180deg, #00C8CE 0%, #E3CEA7 33.33%, #6EFACC 66.67%, #E6F4F1 100%);
     /* /customBorder */
 
     /* customBackground */
-    --lightblue-gradient-bg: linear-gradient(135deg, #e6f4fc 0%, #b0b1f6 100%);
-    --darkblue-gradient-bg: linear-gradient(180deg, #274898 0%, #0F1F43 100%);
+    --light-background-default: #f0f5f7;
+    --dark-background-default: #242424;
+    --light-background-gradient: linear-gradient(135deg, #e6f4fc 0%, #b0b1f6 100%);
+    --dark-background-gradient: linear-gradient(180deg, #274898 0%, #0F1F43 100%);
 
-    --dark-gradient-bg: linear-gradient(90deg, #242424 0%, #2B2A2A 100%);
-    --dark-gradient-img-bg: url('../../../public/images/BackgroundImage/Dark-background.svg');
-
-    --dark-to-gray-bg: linear-gradient(90deg, #333131 50.5%, #5F5D5D 89.5%, rgba(131, 131, 131, 0.56) 100%);
-    --dark-to-gray-bg-alt: linear-gradient(90deg, #333131 46.5%, #474646 80.5%, rgba(101, 101, 101, 0.56) 100%);
-    
-    --light-blue-gradient-bg: linear-gradient(286deg, #CFD8F9 -5.96%, #BCBDFF 35.52%, #ADAEFF 81.5%);
-    --dark-blue-gradient-bg: linear-gradient(90deg, #18316A 0.1%, #23489B 99.9%);
+    --dark-header-gradient-bg: linear-gradient(180deg, transparent 0%, transparent 88%, #7FA4FF 100%);
+    --light-header-gradient-bg: linear-gradient(180deg, transparent 88%, #a285ab 100%);
     /* /customBackground */
 
     /* customTextColor */
-    --text-hover-darkmode-color: #bbbaba;
-    --text-hover-lightmode-color: #798dfd;
+    --text-darkmode-color: #ffffff;
+    --text-lightmode-color: #213547;
+
+    --text-hover-darkmode-color: #f9f871;
+    --text-hover-lightmode-color: #00a6fc;
+
+    --text-shadow-darkmode: 1px 1px 2px rgba(255, 255, 255, 0.2), 2px 2px 4px rgba(0, 0, 0, 0.8);
+    --text-shadow-lightmode: 1px 1px 3px rgba(255, 255, 255, 0.6), 2px 2px 5px rgba(0, 0, 0, 0.3);
     /* /customTextColor */
 
     /* otherCustomNames */
