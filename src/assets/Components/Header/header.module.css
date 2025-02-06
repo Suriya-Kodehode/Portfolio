@@ -17,7 +17,7 @@
 }
 [data-theme='light'] .container {
     background-color: inherit;
-    border-bottom: 3px solid #fcfcd4;
+    border-bottom: 3px solid #a0a8c9;
 }
 
 .container nav {
@@ -33,12 +33,13 @@
     display: flex;
     width: fit-content;
     flex-flow: row wrap;
+    flex-grow: 1;
     justify-content: center;
     padding: 0;
+    margin: inherit 0;
 }
 .container nav ul li {
     width: 9.375rem;
-
     text-decoration: none;
     color: inherit;
     font-size: 1.6rem;
@@ -53,8 +54,16 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.container nav ul li a{
+    display: flex;
+    justify-content: center;
+    color: inherit;
+}
+
 .container nav ul li p {
     margin: 0;
+    text-align: center;
+    width: fit-content;
 }
 [data-theme='dark'] .container nav ul li p {
     text-shadow: var(--text-shadow-darkmode); 
@@ -73,20 +82,37 @@
 [data-theme='light'] .container nav ul li p:hover {
     color: var(--text-hover-lightmode-color);
 }
-.container nav ul li a{
-    color: inherit;
-}
 
 .container nav ul li.darkPageActive {
     border-radius: 0.625rem 0.625rem 0 0;
-    background: var(--dark-header-gradient-bg);
     transition: color 0.3s ease, background-color 0.3s ease;
+}
+.darkPageActive p, .lightPageActive p {
+    color: inherit;
+    position: relative;
+}
+.darkPageActive p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--text-darkmode-underline);
 }
 
 .container nav ul li.lightPageActive {
     border-radius: 0.625rem 0.625rem 0 0;
-    background: var(--light-header-gradient-bg);
     transition: color 0.3s ease, background-color 0.3s ease;
+}
+.lightPageActive p::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--text-lightmode-underline);
 }
 
   /* For mobile screen */
@@ -103,7 +129,6 @@
         height: 4.4rem;
     }
     .container nav ul {
-
         display: flex;
         flex-direction: row;
         justify-content: center;
