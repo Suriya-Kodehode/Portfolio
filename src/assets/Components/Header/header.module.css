@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
 .container {
-    /* background-color:  green; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -11,6 +10,14 @@
 
     font-family: 'Playfair Display', serif;
     font-display: swap;
+}
+[data-theme='dark'] .container {
+    background-color: #0d1b5a;
+    border-bottom: 5px solid #224bac;
+}
+[data-theme='light'] .container {
+    background-color: #c5d4f8;
+    border-bottom: 5px solid #c4d5fc;
 }
 
 .container nav {
@@ -39,28 +46,26 @@
 
     transition: transform 0.3s ease-in-out;
 }
+
 .container nav ul li p {
     margin: 0;
 }
 .container nav ul li p:hover {
     transform: scale(1.1);
-}
-
-.container nav ul li:hover {
     color: #FF6347;
 }
 
-.container nav ul li a {
+.container nav ul li a{
     color: inherit;
 }
 
 .container nav ul li.darkPageActive {
     border-radius: 0.625rem;
-    background-color: #484848;
+    background-color: #1c4092;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 [data-theme='dark'] .container nav ul li:not(.darkPageActive):hover {
-    background-color: rgb(103, 103, 104);
+    background-color: #2253c5;
     transition: background-color 0.25s;
 }
 /* [data-theme='dark'] .container nav ul li.darkPageActive:hover {

@@ -12,13 +12,16 @@
 
     /* customBackground */
     --lightblue-gradient-bg: linear-gradient(135deg, #e6f4fc 0%, #b0b1f6 100%);
+    --darkblue-gradient-bg: linear-gradient(180deg, #274898 0%, #0F1F43 100%);
+
     --dark-gradient-bg: linear-gradient(90deg, #242424 0%, #2B2A2A 100%);
     --dark-gradient-img-bg: url('../../../public/images/BackgroundImage/Dark-background.svg');
 
     --dark-to-gray-bg: linear-gradient(90deg, #333131 50.5%, #5F5D5D 89.5%, rgba(131, 131, 131, 0.56) 100%);
     --dark-to-gray-bg-alt: linear-gradient(90deg, #333131 46.5%, #474646 80.5%, rgba(101, 101, 101, 0.56) 100%);
     
-    --light-blue-gradient-bg: linear-gradient(286deg, #CFD8F9 -5.96%, #BCBDFF 35.52%, #ADAEFF 81.5%);;
+    --light-blue-gradient-bg: linear-gradient(286deg, #CFD8F9 -5.96%, #BCBDFF 35.52%, #ADAEFF 81.5%);
+    --dark-blue-gradient-bg: linear-gradient(90deg, #18316A 0.1%, #23489B 99.9%);
     /* /customBackground */
 
     /* customTextColor */

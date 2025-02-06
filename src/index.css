@@ -19,7 +19,7 @@
 [data-theme="dark"] {
   color-scheme: dark; 
   --background-color: #242424;
-  --background: var(--dark-gradient-img-bg);
+  --background: var(--darkblue-gradient-bg);
   --text-color: rgba(255, 255, 255, 0.87)
 }
 

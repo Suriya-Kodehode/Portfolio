@@ -86,10 +86,12 @@
 }
 
 [data-theme='dark'] .subContainer {
-    background: var(--dark-to-gray-bg-alt);
+    background: var(--dark-blue-gradient-bg);
+    outline: 3px solid #c9f820;
 }
 [data-theme='light'] .subContainer {
     background: var(--light-blue-gradient-bg);
+    outline: 3px solid #4302db;
 }
 
 .nestedContainer {
