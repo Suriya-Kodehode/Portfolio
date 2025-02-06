@@ -64,6 +64,10 @@
     background-color: #1c4092;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
+.darkPageActive p {
+    text-decoration: underline;
+}
+
 [data-theme='dark'] .container nav ul li:not(.darkPageActive):hover {
     background-color: #2253c5;
     transition: background-color 0.25s;
@@ -77,6 +81,10 @@
     background-color: #b3c6fb;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
+.lightPageActive p {
+    text-decoration: underline;
+}
+
 [data-theme='light'] .container nav ul li:not(.lightPageActive):hover {
     background-color: #92aefc;
     transition: background-color 0.25s;
