@@ -9,11 +9,11 @@ export const ThemeProvider = ({children}) => {
         // console.log('Saved theme:', savedTheme)
 
         if(savedTheme) return savedTheme
-        const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+        const preferredTheme = window.matchMedia('(prefers-color-scheme: light)').matches
 
         // console.log('Theme preferred:', preferredTheme)
 
-        return preferredTheme ? 'dark' : 'light';
+        return preferredTheme ? 'light' : 'dark';
     })
 
     useEffect(() => {
@@ -23,7 +23,7 @@ export const ThemeProvider = ({children}) => {
        localStorage.setItem('theme', theme)
     }, [theme]);
 
-    const toggleTheme = () => setTheme(prev => prev === 'light' ? 'dark' : 'light')
+    const toggleTheme = () => setTheme(prev => prev === 'dark' ? 'light' : 'dark')
 
     return (
         <ThemeContext.Provider value={{theme, toggleTheme}}>

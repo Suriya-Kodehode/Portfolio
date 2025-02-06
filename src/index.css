@@ -9,18 +9,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[data-theme="dark"] {
-  color-scheme: dark; 
-  --background-color: #242424;
-  --background: var(--dark-gradient-img-bg);
-  --text-color: rgba(255, 255, 255, 0.87)
-}
-
 [data-theme="light"] {
   color-scheme: light;
   --background-color: #e6f4fc;
   --background: var(--lightblue-gradient-bg);
   --text-color: #213547;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark; 
+  --background-color: #242424;
+  --background: var(--dark-gradient-img-bg);
+  --text-color: rgba(255, 255, 255, 0.87)
 }
 
 /* @media (prefers-color-scheme: dark) {
