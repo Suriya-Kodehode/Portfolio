@@ -22,6 +22,7 @@
     --dark-header-gradient-bg: linear-gradient(180deg, transparent 0%, transparent 88%, #7FA4FF 100%);
     --light-header-gradient-bg: linear-gradient(180deg, transparent 88%, #a285ab 100%);
 
+    --dark-skills-gradient-bg: linear-gradient(90deg, #18316A 0.1%, #23489B 99.9%);
     --light-skills-gradient-bg: linear-gradient(135deg, #e6f4fc 0%, #b0b1f6 100%);
     /* /customBackground */
 
