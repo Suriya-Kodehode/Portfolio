@@ -29,7 +29,7 @@ const routes = createBrowserRouter(
             element: <p className={styles.text}>Page not found</p>
             } 
     ],{
-        basename: base,
+        basename: process.env.PUBLIC_URL || base,
     });
 
 export default routes
