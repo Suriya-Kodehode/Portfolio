@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
-        var path = window.location.pathname;
-        var base = '/Portfolio-forsettelse-oppgave';
-        var redirectTo = base + path;
-        window.location.href = redirectTo;
+        var path = window.location.pathname.replace('/Portfolio-forsettelse-oppgave/', '');
+        window.location.href = '/Portfolio-forsettelse-oppgave' + path;
     </script>
 </head>
 <body>
