@@ -5,9 +5,10 @@
     <title>Redirecting...</title>
     <script type="text/javascript">
         var currentPath = window.location.pathname;
-        var basePath = '/Portfolio-forsettelse-oppgave';
-        if (!currentPath.startsWith(basePath)) {
-            window.location.href = basePath + currentPath;
+        if (!currentPath.startsWith('/Portfolio-forsettelse-oppgave')) {
+            window.location.href = '/Portfolio-forsettelse-oppgave' + currentPath;
+        } else {
+            window.location.href = '/Portfolio-forsettelse-oppgave' + currentPath.replace('/Portfolio-forsettelse-oppgave', '');
         }
     </script>
 </head>
