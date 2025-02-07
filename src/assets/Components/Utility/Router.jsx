@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import { base_url as base } from "../../../../config.js"
 
 import styles from './Router.module.css'
 
@@ -29,7 +28,7 @@ const routes = createBrowserRouter(
             element: <p className={styles.text}>Page not found</p>
             } 
     ],{
-        basename: base,
+        basename: '/Portfolio-forsettelse-oppgave',
     });
 
 export default routes
