@@ -15,7 +15,7 @@ main.content {
 
 .frameContainer {
     display: flex;
-    padding: 1.25rem;
+    padding: 1.25rem 0;
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
@@ -158,6 +158,16 @@ main.content {
     gap: 2.1875rem;
 }
 /* /Contact info area */
+
+.linebreak {
+    height: 0.125rem;
+}
+[data-theme='dark'] .linebreak {
+    background-color: var(--dark-hr);
+}
+[data-theme='light'] .linebreak {
+    background-color: var(--light-hr);
+}
 
 /* Project area */
 .projectContainer {

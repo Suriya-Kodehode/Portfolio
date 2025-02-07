@@ -13,11 +13,11 @@
 }
 [data-theme='dark'] .container {
     background-color: inherit;
-    border-bottom: 3px solid #bbc6ff;
+    border-bottom: 3px solid var(--dark-hr);
 }
 [data-theme='light'] .container {
     background-color: inherit;
-    border-bottom: 3px solid #a0a8c9;
+    border-bottom: 3px solid var(--light-hr);
 }
 
 .container nav {

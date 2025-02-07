@@ -45,6 +45,7 @@ export default function Content() {
                             </div>
                         </div>
                     </div>
+                    <hr className={styles.linebreak}/>
                     <div className={styles.projectContainer}>
                         <h2>Prosjekter</h2>
                         <div className={styles.projectSubContainer}>

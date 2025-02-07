@@ -23,22 +23,6 @@
   --text-color: var(--text-darkmode-color);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background-color:#242424;
-    --text-color: rgba(255, 255, 255, 0.87);
-  }
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-color: #ffffff;
-    --text-color: #213547;
-  }
-} */
-
-
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -93,6 +77,10 @@ button:focus,
 button:focus-visible {
   outline: 4px solid greenyellow;
   box-shadow: 0 0 15px initial;
+}
+
+hr {
+  width: 100%;
 }
 
 @media (prefers-color-scheme: light) {
