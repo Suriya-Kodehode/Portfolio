@@ -9,7 +9,7 @@
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "postbuild": "cp public/_redirects build",
+    "postbuild": "copy public\\_redirects build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
