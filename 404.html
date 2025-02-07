@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found</title>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var path = window.location.pathname;
-            var base = '/Portfolio-forsettelse-oppgave/';
-            if (path.startsWith(base)) {
-                window.location = base + '#' + path.slice(base.length);
-            } else {
-                window.location = '/Portfolio-forsettelse-oppgave/' + '#' + path;
-            }
-        });
-    </script>
+    <script src="../redirect.js"></script>
 </head>
+<style>
+    p {
+        width: 100vw;
+        font-size: 1.5rem;
+        font-weight: 600;
+        display: block;
+        margin: auto;
+    }
+</style>
 <body>
     <p>Redirecting...</p>
 </body>
