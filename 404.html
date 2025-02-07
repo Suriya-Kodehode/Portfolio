@@ -7,9 +7,9 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var path = window.location.pathname;
-            var base = '/Portfolio-forsettelse-oppgave';
+            var base = '/Portfolio-forsettelse-oppgave/';
             if (path.startsWith(base)) {
-                window.location = base + '/index.html' + '#' + path.slice(base.length);
+                window.location = base + '#' + path.slice(base.length);
             } else {
                 window.location = '/Portfolio-forsettelse-oppgave/' + '#' + path;
             }
