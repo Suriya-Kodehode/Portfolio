@@ -24,15 +24,12 @@ const routes = createBrowserRouter(
                     element: <SkillContent />,
                 },
             ]
-        }, 
-        {
+        }, {
             path: '*',
             element: <p className={styles.text}>Page not found</p>
-        } 
-    ],
-    {
+            } 
+    ],{
         basename: base,
-    }
-)
+    });
 
 export default routes
