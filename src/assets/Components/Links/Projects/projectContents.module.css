@@ -14,12 +14,12 @@
     justify-content: start;
     align-items: center;
     gap: 0.625rem;
-    /* align-self: stretch; */
    
     border-radius: 0.3125rem;
     position: relative;
     z-index: 1;
 }
+
 .projectBox::before {
     content: '';
     position: absolute;

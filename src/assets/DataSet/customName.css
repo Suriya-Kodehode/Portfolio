@@ -12,7 +12,9 @@
     --dark-project-border-gradient: linear-gradient(180deg, #FFBD5E 0%, #FF8471 50.28%, #994D9F 100%);
     --light-project-border-gradient: linear-gradient(180deg, #00C8CE 0%, #E3CEA7 33.33%, #6EFACC 66.67%, #E6F4F1 100%);
 
+    --dark-hr-gradient: linear-gradient(to left, rgba(187, 198, 255, 0) 0%, #bbc6ff 50%, rgba(187, 198, 255, 0) 100%);
     --dark-hr: #bbc6ff;
+    --light-hr-gradient: linear-gradient(to left, rgba(160, 168, 201, 0) 0%, #a0a8c9 50%, rgba(160, 168, 201, 0) 100%);
     --light-hr: #a0a8c9;
     /* /customBorder */
 

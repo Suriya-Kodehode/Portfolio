@@ -29,7 +29,7 @@ main.content {
 
 .container {
     display: flex;
-    padding: 20px 180px;
+    padding: 1.25rem 31.25rem;
     justify-content: center;
     align-items: center;
     align-self: stretch;
@@ -86,7 +86,6 @@ main.content {
     height: 100%;
     object-fit: cover;
 }
-
 
 .imgText {
     width: 20rem;
@@ -160,13 +159,16 @@ main.content {
 /* /Contact info area */
 
 .linebreak {
+    border: none;
     height: 0.125rem;
+    width: 50%;
+    margin: 0.625rem 0;
 }
 [data-theme='dark'] .linebreak {
-    background-color: var(--dark-hr);
+    background: var(--dark-hr-gradient);
 }
 [data-theme='light'] .linebreak {
-    background-color: var(--light-hr);
+    background: var(--light-hr-gradient);
 }
 
 /* Project area */

@@ -4,14 +4,14 @@ export const projects = [
     {
         title: 'Gruppeprosjekt',
         imageUrl: `${base}/images/project_sample1.svg`,
-        backgroundColor: '#894141',
+        backgroundColor: '#ddeeff30',
         url: 'https://suriya-kodehode.github.io/ViteNPM-prosjekt/',
         description: 'En gruppeoppgave som jeg har jobbet med andre studenter, målet var å bruke NPM pakke i React. Jeg brukte Cheerio for analysere og Axios for å hente HTML info på andre nettside, info ble lagt inn på prosjektsiden med noe redigering for lesbarhet',
     },
     {
         title: 'Restaurantmenyen',
         imageUrl: `${base}/images/project_sample2.svg`,
-        backgroundColor: '#4A4292',
+        backgroundColor: '#85ca4555',
         url: 'https://suriya-kodehode.github.io/React-Oppgave-1-2---Restaurantmenyen/',
         description: 'Laget mat menyer ved bruk av grid-layout i React, og sorterte etter mat kategori',
     },
