@@ -17,12 +17,12 @@ const routes = createBrowserRouter(
         children: [
                 {
                     index: true,
-                    element: <Content />
+                    element: <Content />,
                 },
                 {
                     path: "/skills",
-                    element: <SkillContent />
-                }
+                    element: <SkillContent />,
+                },
             ]
         }, 
         {
