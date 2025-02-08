@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import { base_url as base } from "../../../../config.js";
 
 import styles from './Router.module.css'
@@ -8,7 +8,7 @@ import Content from "../../Content/HomeContent.jsx";
 import SkillContent from "../../Content/SkillContent.jsx";
 
 
-const routes = createBrowserRouter(
+const routes = createHashRouter(
     [
         {
         path: '/',
@@ -24,12 +24,12 @@ const routes = createBrowserRouter(
                     element: <SkillContent />,
                 },
             ]
-        }, {
+        }, 
+        {
             path: '*',
             element: <p className={styles.text}>Page not found</p>
-            } 
-    ],{
-        basename: process.env.PUBLIC_URL || base,
-    });
+        } 
+    ]
+);
 
 export default routes
