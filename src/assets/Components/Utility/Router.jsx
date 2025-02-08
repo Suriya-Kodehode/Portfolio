@@ -1,5 +1,4 @@
 import { createHashRouter } from "react-router-dom";
-import { base_url as base } from "../../../../config.js";
 
 import styles from './Router.module.css'
 
