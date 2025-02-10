@@ -29,6 +29,9 @@
 
     --dark-skills-gradient-bg: linear-gradient(90deg, #18316A 0.1%, #23489B 99.9%);
     --light-skills-gradient-bg: linear-gradient(135deg, #e6f4fc 0%, #b0b1f6 100%);
+
+    --dark-projectbox-bg: #a570b17a;
+    --light-projectbox-bg: #eecbc0c0;
     /* /customBackground */
 
     /* customTextColor */

@@ -49,12 +49,11 @@ export default function Content() {
                     <div className={styles.projectContainer}>
                         <h2>Prosjekter</h2>
                         <div className={styles.projectSubContainer}>
-                            {projects.map(({title, imageUrl, backgroundColor, url, description}, index) => (
+                            {projects.map(({title, imageUrl, url, description}, index) => (
                                 <ProjectBox 
                                     key={index}
                                     title={title}
                                     imageUrl={imageUrl}
-                                    backgroundColor={backgroundColor}
                                     url={url}
                                     description={description}
                                 />

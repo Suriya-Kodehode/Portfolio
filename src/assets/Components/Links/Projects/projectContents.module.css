@@ -19,7 +19,12 @@
     position: relative;
     z-index: 1;
 }
-
+[data-theme='dark'] .projectBox {
+    background: var(--dark-projectbox-bg)
+}
+[data-theme='light'] .projectBox {
+    background: var(--light-projectbox-bg);
+}
 .projectBox::before {
     content: '';
     position: absolute;
@@ -54,10 +59,11 @@
     height: fit-content;
     margin: 0;
     font-size: 1.5rem;
+    font-weight: 600;
     flex-direction: column;
     justify-content: center;
 
-    color: white;
+    color: var(--text-color);
     z-index: 1;
     transition: transform 0.05s;
 }
@@ -67,15 +73,17 @@
     margin: 0;
     padding: 0 0.5rem;
     z-index: 1;
-    color: white;
+    font-weight: 600;
 
+    color: var(--text-color);
     overflow-x: auto;
 }
 .projectBox span:hover {
-    color: white;
+    color: var(--text-color);
 }
 
 .projectBox img {
     width: 100%;
+    border-radius: 5px;
     align-self: baseline;
 }
