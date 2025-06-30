@@ -1,15 +1,46 @@
-import { base_url as base } from "../../../config"
+import path from "./FileManager"
+
+const icons = path("icons", [{ 
+    csharp: "CSharp icon.svg",
+    css: "CSS icon.svg", 
+    davinci: "DaVinci Resolve icon.svg", 
+    figma: "Figma icon.svg", 
+    gimp: "GIMP icon.svg", 
+    html: "HTML icon.svg", 
+    inkscape: "Inkscape icon.svg", 
+    javascript: "JavaScript icon.svg", 
+    moffice: "Microsoft Office icon.svg", 
+    react: "React icon.svg", 
+    unity: "Unity icon.svg", 
+    scircle: "S circle.svg", 
+    sunlight: "sun-light.svg", 
+    moondarkpng: "moon-dark.png", 
+    moondarksvg: "moon-dark.svg", 
+    downloaddark:"Icon=Download, Color=Black.svg", 
+    downloadlight: "Icon=Download, Color=White.svg", 
+    gitdark: "Icon=GitIcon, Color=Black.svg", 
+    gitlight: "Icon=GitIcon, Color=White.svg"
+}]);
+const image = path("images", [{
+    project1: "project_sample1.svg",
+    project2: "project_sample2.svg",
+    project3: "project_sample3.svg",
+    me: "Me2024.svg",
+}])
+const download = path("downloads", [{ 
+    mycv: "CV-Suriya 2025.pdf",
+}])
 
 export const projects = [
     {
         title: 'Gruppeprosjekt',
-        imageUrl: `${base}/images/project_sample1.svg`,
+        imageUrl: image.project1,
         url: 'https://suriya-kodehode.github.io/ViteNPM-prosjekt/',
         description: 'En gruppeoppgave som jeg har jobbet med andre studenter, målet var å bruke NPM pakke i React. Jeg brukte Cheerio for analysere og Axios for å hente HTML info på andre nettside, info ble lagt inn på prosjektsiden med noe redigering for lesbarhet',
     },
     {
         title: 'Restaurantmenyen',
-        imageUrl: `${base}/images/project_sample2.svg`,
+        imageUrl: image.project2,
         url: 'https://suriya-kodehode.github.io/React-Oppgave-1-2---Restaurantmenyen/',
         description: 'Laget mat menyer ved bruk av grid-layout i React, og sorterte etter mat kategori',
     },
@@ -23,52 +54,52 @@ export const projects = [
 export const linkBox = [
     {
         text: 'Github',
-        iconLight: `${base}/images/Icon=GitIcon, Color=White.svg`,
-        iconDark: `${base}/images/Icon=GitIcon, Color=Black.svg`,
+        iconLight: icons.gitlight,
+        iconDark: icons.gitdark,
         textTitleLight: 'Git icon lightmode',
         textTitleDark: 'Git icon darkmode',
         url: 'https://github.com/Suriya-Kodehode',
     },
     {
         text: 'Last ned CV',
-        iconLight: `${base}/images/Icon=Download, Color=White.svg`,
-        iconDark: `${base}/images/Icon=Download, Color=Black.svg`,
+        iconLight: icons.downloadlight,
+        iconDark: icons.downloaddark,
         textTitleLight: 'Download icon lightmode',
         textTitleDark: 'Download icon darkmode',
-        url: `${base}/CV-Suriya 2025.pdf`,
+        url: download.mycv,
     }
 ]
 
 export const courseSkills = [
     {
         text: 'HTML',
-        icon: `${base}/images/HTML icon.svg`,
+        icon: icons.html,
     },
     {
         text: 'CSS',
-        icon: `${base}/images/CSS icon.svg`,
+        icon: icons.css,
     },
     {
         text: 'JavaScript',
-        icon: `${base}/images/JavaScript icon.svg`,
+        icon: icons.javascript,
     },
     {
         text: 'Figma',
-        icon: `${base}/images/Figma icon.svg`,
+        icon: icons.figma,
     },
     {
         text: 'React',
-        icon: `${base}/images/React icon.svg`,
+        icon: icons.react,
     },
 ]
 export const otherSkills = [
     {
         text: 'Unity',
-        icon: `${base}/images/Unity icon.svg`,
+        icon: icons.unity,
     },
     {
         text: 'C#',
-        icon: `${base}/images/CSharp icon.svg`,
+        icon: icons.csharp,
     },
     {
         text: 'Microsoft Certified: Azure Fundamentals',
@@ -80,20 +111,20 @@ export const otherSkills = [
     },
     {
         text: 'Microsoft Office',
-        icon: `${base}/images/Microsoft Office icon.svg`,
+        icon: icons.moffice,
     }, 
 ]
 export const selvTaughtSkills = [
     {
         text: 'GIMP',
-        icon: `${base}/images/GIMP icon.svg`,
+        icon: icons.gimp,
     },
     {
         text: 'Inkscape',
-        icon: `${base}/images/Inkscape icon.svg`
+        icon: icons.inkscape
     },
     {
         text: 'DaVinci Resolve',
-        icon: `${base}/images/DaVinci Resolve icon.svg`
+        icon: icons.davinci
     },
 ]

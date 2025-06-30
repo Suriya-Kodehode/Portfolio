@@ -1,8 +1,8 @@
 {
-  "name": "portfolio-forsettelse-oppgave",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Suriya-Kodehode.github.io/Portfolio-forsettelse-oppgave",
+  "homepage": "https://Suriya-Kodehode.github.io/Portfolio",
   "type": "module",
   "scripts": {
     "dev": "vite",

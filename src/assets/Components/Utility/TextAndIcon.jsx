@@ -1,15 +1,20 @@
 import React from 'react';
-import styles from './TextAndIcon.module.css'
 
 const TextAndIcon = ({textLogo}) => {
+    const styles = {
+        textAndIcon: { marginBottom: "1rem" },
+        image: { width: '32px', height: '32px' },
+        text: { margin: 0 }
+    }
+
     return (
         <>
             {textLogo.map(({text, icon}, index) => (
-                <div key={index} className={styles.TextAndIcon}>
+                <div key={index} style={styles.textAndIcon}>
                     {icon ? (
-                        <img src={icon} alt={`${text} icon`} />
+                        <img src={icon} alt={`${text} icon`} style={styles.image} />
                     ) : null}
-                    <p>{text}</p>
+                    <p style={styles.text}>{text}</p>
                 </div>
             ))}
         </>

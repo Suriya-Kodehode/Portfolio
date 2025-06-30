@@ -3,12 +3,11 @@ import styles from './HomeContent.module.css';
 import ProjectBox from '../Components/Links/Projects/projectContents.jsx';
 import ContactLink from '../Components/Links/Contact/ContactLink.jsx';
 import '../DataSet/customName.css'
-
-import Me2024 from '/images/Me2024.svg'
-
 import { projects, linkBox } from '../DataSet/Data.jsx'
+import path from '../DataSet/FileManager';
 
-export default function Content() {
+const Content = () => {
+    const Me2024 = path("images", [ "Me2024.svg" ]);
     
     return (
         <>
@@ -65,3 +64,5 @@ export default function Content() {
         </>
     )
 }
+
+export default Content;
