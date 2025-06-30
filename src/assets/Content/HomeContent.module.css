@@ -1,5 +1,4 @@
-
-
+/* Base layout styles */
 main.content {
     width: 100%;
     min-height: fit-content;
@@ -9,7 +8,6 @@ main.content {
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
-
     font-family: 'Quicksand', serif;
 }
 
@@ -35,7 +33,7 @@ main.content {
     align-self: stretch;
 }
 
-/* Image area */
+/* Image area styles */
 .myImg {
     display: flex;
     padding: 0.625rem;
@@ -46,41 +44,33 @@ main.content {
     flex: 1 0 0;
     align-self: stretch;
 }
+
 .imgContainer {
     width: 12.5rem;
     height: 12.5rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     overflow: hidden;
     border-radius: 50%;
-
     position: relative;
     z-index: 1;
 }
+
 .imgContainer::before {
     content: '';
     position: absolute;
     inset: 0;
-
     border-radius: inherit;
     border: 5px solid transparent;
-    
     mask:
-    linear-gradient(#000 0 0) padding-box, 
-    linear-gradient(#000 0 0);
+        linear-gradient(#000 0 0) padding-box, 
+        linear-gradient(#000 0 0);
     mask-composite: exclude;
     z-index: 0;
 }
-[data-theme='dark'] .imgContainer::before {
-    background: var(--dark-profile-border-gradient) border-box;
-}
-[data-theme='light'] .imgContainer::before {
-    background: var(--light-profile-border-gradient) border-box;
-}
+
 .imgContainer img {
     width: 100%;
     height: 100%;
@@ -96,20 +86,20 @@ main.content {
     gap: 0.625rem;
     margin: auto;
 }
+
 .imgText h2 {
     margin: 1rem;
     text-wrap: nowrap;
-
 }
+
 .imgText p {
     text-align: center;
     font-size: 1.25rem;
     font-weight: 600;
     margin: 0;
 }
-/* /Image area */
 
-/* Contact info area */
+/* Contact info area styles */
 .myContact {
     display: flex;
     flex-direction: column;
@@ -119,6 +109,7 @@ main.content {
     flex: 1 0 0;
     align-self: stretch;
 }
+
 .myContact h2 {
     margin: 1rem;
 }
@@ -129,23 +120,14 @@ main.content {
     align-items: center;
     gap: 2.1875rem;
 }
+
 .infoLink a {
     text-decoration: underline;
     color: inherit;
     border-radius: 0.3125rem;
-    transition: color 0.3s ease;
-
     font-size: 1.2rem;
     font-weight: 600;
-
-    transition: transform 0.05s;
-}
-.infoLink a:hover {
-    color: var(--text-hover-darkmode-color);
-    transform: scale(1.01);
-}
-[data-theme='light'] .infoLink a:hover {
-    color: var(--text-hover-lightmode-color);
+    transition: color 0.3s ease, transform 0.05s;
 }
 
 .linkTo {
@@ -156,22 +138,16 @@ main.content {
     align-items: center;
     gap: 2.1875rem;
 }
-/* /Contact info area */
 
+/* Divider styles */
 .linebreak {
     border: none;
     height: 0.125rem;
     width: 50%;
     margin: 0.625rem 0;
 }
-[data-theme='dark'] .linebreak {
-    background: var(--dark-hr-gradient);
-}
-[data-theme='light'] .linebreak {
-    background: var(--light-hr-gradient);
-}
 
-/* Project area */
+/* Project area styles */
 .projectContainer {
     display: flex;
     padding: 0.625rem;
@@ -181,9 +157,11 @@ main.content {
     gap: 1.25rem;
     align-self: stretch;
 }
+
 .projectContainer h2 {
     margin: 0;
 }
+
 .projectSubContainer {
     display: flex;
     flex-wrap: wrap;
@@ -193,13 +171,38 @@ main.content {
     gap: 3.75rem;
     align-self: stretch;
 }
-/* /Project area */
 
-/* For mobile screen */
-@media only screen 
-and (min-width: 300px) 
-and (max-width: 480px)
-{
+/* Theme-specific styles */
+/* Dark theme */
+[data-mode='dark'] .imgContainer::before {
+    background: var(--dark-profile-border-gradient) border-box;
+}
+
+[data-mode='dark'] .linebreak {
+    background: var(--dark-hr-gradient);
+}
+
+/* Light theme */
+[data-mode='light'] .imgContainer::before {
+    background: var(--light-profile-border-gradient) border-box;
+}
+
+[data-mode='light'] .linebreak {
+    background: var(--light-hr-gradient);
+}
+
+/* Hover effects */
+.infoLink a:hover {
+    color: var(--text-hover-darkmode-color);
+    transform: scale(1.01);
+}
+
+[data-mode='light'] .infoLink a:hover {
+    color: var(--text-hover-lightmode-color);
+}
+
+/* Mobile responsive styles */
+@media only screen and (min-width: 300px) and (max-width: 480px) {
     main.content {
         width: 100%;
         min-height: fit-content;
@@ -210,6 +213,7 @@ and (max-width: 480px)
         align-items: center;
         gap: 1.25rem;
     }
+    
     .frameContainer {
         max-width: 100%;
         display: flex;
@@ -219,6 +223,7 @@ and (max-width: 480px)
         gap: 1.25rem;
         align-self: center;
     }
+    
     .container {
         display: flex;
         flex-direction: column;
@@ -228,6 +233,37 @@ and (max-width: 480px)
         align-items: center;
         align-self: center;
     }
+    
+    .imgText {
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        margin: auto;
+    }
+    
+    .imgText h2 {
+        font-size: 2rem;
+    }
+    
+    .myContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        padding: 0.625rem 0;
+        flex: 1 0 0;
+        align-self: center;
+    }
+    
+    .myContact h2 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    
     .projectContainer h2 {
         font-size: 2rem;
         margin: 0;
@@ -242,32 +278,5 @@ and (max-width: 480px)
         align-items: center;
         gap: 0.9375rem;
         align-self: stretch;
-    }
-    .imgText {
-        width: 20rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 0.625rem;
-        margin: auto;
-    }
-    .imgText h2 {
-        font-size: 2rem;
-    }
-
-    .myContact {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 0.625rem;
-            padding: 0.625rem 0;
-            flex: 1 0 0;
-            align-self: center;
-    }
-    .myContact h2 {
-        font-size: 2rem;
-        margin: 0;
     }
 }

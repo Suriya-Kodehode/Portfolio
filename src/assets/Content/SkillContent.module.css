@@ -1,3 +1,4 @@
+/* Base layout styles */
 .mainContainer {
     display: flex;
     min-height: fit-content;
@@ -9,7 +10,6 @@
     gap: 1.25rem;
     flex-shrink: 0;
     align-self: stretch;
-
     font-family: 'Quicksand', serif;
 }
 
@@ -20,25 +20,10 @@
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-
-    /* position: relative; */
     border-radius: 0.5rem;
     z-index: 1;
-    
-}
-[data-theme='light'] .container h1, .container h2, .container h3 {
-    text-shadow: var(--text-shadow-darkmode)
-}
-[data-theme='dark'] .container h1, .container h2, .container h3 {
-    text-shadow: var(--text-shadow-lightmode)
 }
 
-.container h2 {
-    margin: 1rem;
- }
-.container h3 {
-    margin: 1.25rem;
-}
 .midContainer {
     grid-area: content;
     display: flex;
@@ -47,6 +32,7 @@
     align-items: center;
     gap: 1.25rem;
 }
+
 .subContainer {
     display: flex;
     padding: 1.25rem;
@@ -55,38 +41,40 @@
     align-items: center;
     gap: 0.625rem;
     align-self: stretch;
-
     position: relative;
     border-radius: 0.5rem;
     z-index: 1;
 }
 
-[data-theme='dark'] .subContainer {
-    background: var(--dark-skills-gradient-bg);
-    outline: 3px solid #f9f871;
-}
-[data-theme='light'] .subContainer {
-    background: var(--light-skills-gradient-bg);
-    outline: 3px solid #26c196;
-    box-shadow: 0 0 0.3125rem #008a63, 0 0 0.625rem #26c196;
+/* Typography styles */
+.container h2 {
+    margin: 1rem;
 }
 
+.container h3 {
+    margin: 1.25rem;
+}
+
+/* Nested content styles */
 .nestedContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
 }
+
 .nestedContainer p {
     font-size: 1.1rem;
     font-weight: 700;
     -webkit-text-stroke-width: var(--webkit-text-stroke-width);
     -webkit-text-stroke-color: var(--webkit-text-stroke-color);
 }
+
 .nestedContainer img {
     width: 1.875rem;
 }
 
+/* Skill section layouts */
 .otherRow1 {
     display: flex;
     justify-content: center;
@@ -100,6 +88,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .selvRow1 {
     display: flex;
     flex-direction: row;
@@ -108,11 +97,34 @@
     gap: 1.25rem;
 }
 
-/* For mobile screen */
-@media only screen 
-and (min-width: 300px) 
-and (max-width: 480px)
-{
+/* Theme-specific styles */
+/* Dark theme */
+[data-mode='dark'] .container h1,
+[data-mode='dark'] .container h2,
+[data-mode='dark'] .container h3 {
+    text-shadow: var(--text-shadow-lightmode);
+}
+
+[data-mode='dark'] .subContainer {
+    background: var(--dark-skills-gradient-bg);
+    outline: 3px solid #f9f871;
+}
+
+/* Light theme */
+[data-mode='light'] .container h1,
+[data-mode='light'] .container h2,
+[data-mode='light'] .container h3 {
+    text-shadow: var(--text-shadow-darkmode);
+}
+
+[data-mode='light'] .subContainer {
+    background: var(--light-skills-gradient-bg);
+    outline: 3px solid #26c196;
+    box-shadow: 0 0 0.3125rem #008a63, 0 0 0.625rem #26c196;
+}
+
+/* Mobile responsive styles */
+@media only screen and (min-width: 300px) and (max-width: 480px) {
     .mainContainer {
         width: 100%;
         min-height: fit-content;
@@ -122,7 +134,6 @@ and (max-width: 480px)
         justify-content: center;
         align-items: center;
         padding: 0 0 1.25rem 0;
-        /* gap: 1.25rem; */
     }
 
     .container {
@@ -130,20 +141,17 @@ and (max-width: 480px)
         display: grid;
         grid-template-areas: 
             'title'
-            'content'
-        ;
+            'content';
         flex-direction: column;
         padding: 0 0 1.25rem 0;
-        
         justify-content: center;
         align-items: center;
         gap: 0 1.25rem;
         align-self: center;
-    
-        /* position: relative; */
         border-radius: 0.5rem;
         z-index: 1;
     }
+    
     .midContainer {
         grid-area: content;
         display: flex;
@@ -157,6 +165,7 @@ and (max-width: 480px)
         grid-area: title;
         font-size: 2rem;
     }
+    
     .container h3 {
         font-size: 1.5rem;
     }
@@ -164,18 +173,16 @@ and (max-width: 480px)
     .subContainer {
         width: 100%;
         display: flex;
-        
         padding: 0.5rem;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 0.625rem;
         align-self: center;
-    
-        /* position: relative; */
         border-radius: 0.5rem;
         z-index: 1;
     }
+    
     .nestedContainer {
         width: 80%;
         display: flex;

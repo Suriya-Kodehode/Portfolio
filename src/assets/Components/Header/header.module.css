@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
+/* Base container styles */
 .container {
     position: relative;
     display: flex;
@@ -7,19 +8,11 @@
     align-items: center;
     width: 100%;
     height: 100%;
-
     font-family: 'Playfair Display', serif;
     font-display: swap;
 }
-[data-theme='dark'] .container {
-    background-color: inherit;
-    border-bottom: 3px solid var(--dark-hr);
-}
-[data-theme='light'] .container {
-    background-color: inherit;
-    border-bottom: 3px solid var(--light-hr);
-}
 
+/* Navigation styles */
 .container nav {
     width: fit-content;
     display: flex;
@@ -28,16 +21,17 @@
     padding: 0;
     margin: 0;
 }
+
 .container nav ul {
     width: fit-content;
     display: flex;
-    width: fit-content;
     flex-flow: row wrap;
     flex-grow: 1;
     justify-content: center;
     padding: 0;
     margin: inherit 0;
 }
+
 .container nav ul li {
     width: 9.375rem;
     text-decoration: none;
@@ -46,15 +40,13 @@
     font-weight: 700;
     padding: .5rem;
     border-radius: 0.625rem;
-    transition: color 0.25s;
     cursor: pointer;
     list-style: none;
     margin: 0 2rem;
-
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, color 0.25s;
 }
 
-.container nav ul li a{
+.container nav ul li a {
     display: flex;
     justify-content: center;
     color: inherit;
@@ -65,32 +57,20 @@
     text-align: center;
     width: fit-content;
 }
-[data-theme='dark'] .container nav ul li p {
-    text-shadow: var(--text-shadow-darkmode); 
-}
-[data-theme='light'] .container nav ul li p {
-    text-shadow: var(--text-shadow-lightmode); 
-}
 
-.container nav ul li p:hover {
-    transform: scale(1.1);
-    
-}
-[data-theme='dark'] .container nav ul li p:hover {
-    color: var(--text-hover-darkmode-color);
-}
-[data-theme='light'] .container nav ul li p:hover {
-    color: var(--text-hover-lightmode-color);
-}
-
-.container nav ul li.darkPageActive {
+/* Active page styles */
+.darkPageActive,
+.lightPageActive {
     border-radius: 0.625rem 0.625rem 0 0;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
-.darkPageActive p, .lightPageActive p {
+
+.darkPageActive p,
+.lightPageActive p {
     color: inherit;
     position: relative;
 }
+
 .darkPageActive p::after {
     content: '';
     position: absolute;
@@ -101,10 +81,6 @@
     background-color: var(--text-darkmode-underline);
 }
 
-.container nav ul li.lightPageActive {
-    border-radius: 0.625rem 0.625rem 0 0;
-    transition: color 0.3s ease, background-color 0.3s ease;
-}
 .lightPageActive p::after {
     content: '';
     position: absolute;
@@ -115,11 +91,42 @@
     background-color: var(--text-lightmode-underline);
 }
 
-  /* For mobile screen */
-  @media only screen 
-  and (min-width: 300px) 
-  and (max-width: 480px)
-  {
+/* Theme-specific styles */
+/* Dark theme */
+[data-mode='dark'] .container {
+    background-color: inherit;
+    border-bottom: 3px solid var(--dark-hr);
+}
+
+[data-mode='dark'] .container nav ul li p {
+    text-shadow: var(--text-shadow-darkmode);
+}
+
+[data-mode='dark'] .container nav ul li p:hover {
+    color: var(--text-hover-darkmode-color);
+}
+
+/* Light theme */
+[data-mode='light'] .container {
+    background-color: inherit;
+    border-bottom: 3px solid var(--light-hr);
+}
+
+[data-mode='light'] .container nav ul li p {
+    text-shadow: var(--text-shadow-lightmode);
+}
+
+[data-mode='light'] .container nav ul li p:hover {
+    color: var(--text-hover-lightmode-color);
+}
+
+/* Hover effects */
+.container nav ul li p:hover {
+    transform: scale(1.1);
+}
+
+/* Media queries */
+@media only screen and (min-width: 300px) and (max-width: 480px) {
     .container {
         position: relative;
         display: flex;
@@ -128,6 +135,7 @@
         width: 100vw;
         height: 4.4rem;
     }
+    
     .container nav ul {
         display: flex;
         flex-direction: row;
@@ -136,6 +144,7 @@
         flex-grow: 1;
         margin: 0;
     }
+    
     .container nav ul li {
         display: flex;
         justify-content: center;
@@ -144,8 +153,9 @@
         margin: 0;
         padding: 0;
     }
+    
     .container nav ul li p {
         width: fit-content;
         text-align: center;
     }
-  }
+}

@@ -1,12 +1,12 @@
 
 import styles from './mode.module.css';
 
-import { useTheme } from './ThemeContext.jsx';
+import { useMode } from './ThemeContext.jsx';
 
 import path from "@/assets/DataSet/FileManager.js";
 
 const ToggleMode = () => {
-    const { theme, toggleTheme } = useTheme()
+    const { mode, toggleMode } = useMode()
     const icons = path("icons", [{
         lightImage: "sun-light.svg",
         darkImage: "moon-dark.svg",
@@ -17,14 +17,14 @@ const ToggleMode = () => {
              <nav id={styles.themeContainer}>
                 <button 
                     id={styles.themeButton} 
-                    onClick={toggleTheme}
-                    aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+                    onClick={toggleMode}
+                    aria-label={`Switch to ${mode === 'light' ? 'dark' : 'light'} mode`}
                     className='theme-toggle'
                 >
                     <img 
                          id={styles.modeImage}  
-                         src={theme === 'light' ? icons.darkImage : icons.lightImage} 
-                         alt={theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+                         src={mode === 'light' ? icons.darkImage : icons.lightImage} 
+                         alt={mode === 'light' ? 'Dark Mode' : 'Light Mode'}
                     />
                 </button>
             </nav>

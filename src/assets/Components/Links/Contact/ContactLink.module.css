@@ -1,12 +1,4 @@
-
-a.linkBox {
-    text-decoration: none;
-    width: 12.5rem;
-}
-[data-theme="light"] a.linkBox:hover {
-    color: var(--text-hover-lightmode-color);
-}
-
+/* Base styles */
 .linkBox {
     display: flex;
     height: fit-content;
@@ -15,40 +7,27 @@ a.linkBox {
     align-items: center;
     gap: 0.625rem;
     text-decoration: none;
-
     border-radius: 0.625rem;
     position: relative; 
     z-index: 1;
+    width: 12.5rem;
 }
-[data-theme='dark'] .linkBox {
-    background-color: var(--dark-contact-background);
-    border-radius: 0.625rem;
-}
-[data-theme='light'] .linkBox {
-    background-color: var(--light-contact-background);
-    border-radius: 0.625rem;
-}
+
+/* Pseudo-element for border gradient */
 .linkBox::before {
     content: '';
     position: absolute;
     inset: 0;
-
     border-radius: inherit;
     border: 5px solid transparent;
-    
     mask: 
-    linear-gradient(#000 0 0) padding-box, 
-    linear-gradient(#000 0 0);
+        linear-gradient(#000 0 0) padding-box, 
+        linear-gradient(#000 0 0);
     mask-composite: exclude;
     z-index: 0;
 }
-[data-theme='dark'] .linkBox::before {
-    background: var(--dark-contact-border-gradient) border-box;
-}
-[data-theme="light"] .linkBox::before {
-    background: var(--light-contact-border-gradient) border-box;
-}
 
+/* Text styling */
 .text {
     -webkit-text-stroke-width: var(--webkit-text-stroke-width);
     -webkit-text-stroke-color: var(--webkit-text-stroke-color);
@@ -58,11 +37,37 @@ a.linkBox {
     z-index: 1;
 }
 
+/* Icon container */
 .iconContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .iconContainer img {
     width: 2rem;
+}
+
+/* Theme-specific styles */
+/* Dark theme */
+[data-mode='dark'] .linkBox {
+    background-color: var(--dark-contact-background);
+}
+
+[data-mode='dark'] .linkBox::before {
+    background: var(--dark-contact-border-gradient) border-box;
+}
+
+/* Light theme */
+[data-mode='light'] .linkBox {
+    background-color: var(--light-contact-background);
+}
+
+[data-mode="light"] .linkBox::before {
+    background: var(--light-contact-border-gradient) border-box;
+}
+
+/* Hover effects */
+[data-mode="light"] .linkBox:hover {
+    color: var(--text-hover-lightmode-color);
 }

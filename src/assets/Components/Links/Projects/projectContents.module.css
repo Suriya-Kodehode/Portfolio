@@ -1,4 +1,4 @@
-
+/* Base container styles */
 .projectBoxLink {
     width: 18rem;
     height: 20rem;
@@ -14,46 +14,27 @@
     justify-content: start;
     align-items: center;
     gap: 0.625rem;
-   
     border-radius: 0.3125rem;
     position: relative;
     z-index: 1;
 }
-[data-theme='dark'] .projectBox {
-    background: var(--dark-projectbox-bg)
-}
-[data-theme='light'] .projectBox {
-    background: var(--light-projectbox-bg);
-}
+
+/* Pseudo-element for border gradient */
 .projectBox::before {
     content: '';
     position: absolute;
     inset: 0;
     padding: 1rem;
-
     border-radius: 0.3125rem;
     border: 8px solid transparent;
     mask: 
-    linear-gradient(#000 0 0) padding-box,
-    linear-gradient(#000 0 0);
+        linear-gradient(#000 0 0) padding-box,
+        linear-gradient(#000 0 0);
     mask-composite: exclude; 
-    
     z-index: 0;
 }
-[data-theme='dark'] .projectBox::before {
-    background: var(--dark-project-border-gradient) border-box;
-}
-[data-theme='light'] .projectBox::before {
-    background: var(--light-project-border-gradient) border-box;
-}
 
-[data-theme='dark'] .projectBox:hover p {
-    color: var(--text-hover-darkmode-color);
-}
-[data-theme='light'] .projectBox:hover p {
-    color: var(--text-hover-lightmode-color);
-}
-
+/* Text content styles */
 .projectBox p {
     width: 14.375rem;
     height: fit-content;
@@ -62,13 +43,9 @@
     font-weight: 600;
     flex-direction: column;
     justify-content: center;
-
     color: var(--text-color);
     z-index: 1;
     transition: transform 0.05s;
-}
-.projectBox p:hover {
-    transform: scale(1.01);
 }
 
 .projectBox span {
@@ -77,16 +54,49 @@
     padding: 0 0.5rem;
     z-index: 1;
     font-weight: 600;
-
     color: var(--text-color);
     overflow-x: auto;
 }
-.projectBox span:hover {
-    color: var(--text-color);
-}
 
+/* Image styles */
 .projectBox img {
     width: 100%;
     border-radius: 5px;
     align-self: baseline;
+}
+
+/* Theme-specific styles */
+/* Dark theme */
+[data-mode='dark'] .projectBox {
+    background: var(--dark-projectbox-bg);
+}
+
+[data-mode='dark'] .projectBox::before {
+    background: var(--dark-project-border-gradient) border-box;
+}
+
+[data-mode='dark'] .projectBox:hover p {
+    color: var(--text-hover-darkmode-color);
+}
+
+/* Light theme */
+[data-mode='light'] .projectBox {
+    background: var(--light-projectbox-bg);
+}
+
+[data-mode='light'] .projectBox::before {
+    background: var(--light-project-border-gradient) border-box;
+}
+
+[data-mode='light'] .projectBox:hover p {
+    color: var(--text-hover-lightmode-color);
+}
+
+/* Hover effects */
+.projectBox p:hover {
+    transform: scale(1.01);
+}
+
+.projectBox span:hover {
+    color: var(--text-color);
 }

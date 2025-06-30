@@ -6,7 +6,6 @@ const TextAndIcon = ({textLogo}) => {
         image: { width: '32px', height: '32px' },
         text: { margin: 0 }
     }
-
     return (
         <>
             {textLogo.map(({text, icon}, index) => (

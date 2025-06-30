@@ -3,18 +3,21 @@ import { createHashRouter, RouterProvider } from "react-router-dom";
 import App from "../../../App.jsx";
 import Content from "../../Content/HomeContent.jsx";
 import SkillContent from "../../Content/SkillContent.jsx";
+import NotFound from "./notfound.jsx";
+import { ThemeProvider } from "../toggleTheme/ThemeContext.jsx";
 
-const styles = {
-    text: { width: '100vw', fontSize: '1.5rem', fontWeight: 600, display: 'block', margin: 'auto' }
-};
-
+const ErrorWrapper = () => (
+    <ThemeProvider>
+        <NotFound />
+    </ThemeProvider>
+);
 
 const routes = createHashRouter(
     [
         {
         path: '/',
         element: <App/>,
-        errorElement: <p style={styles.text}>Error</p>,
+        errorElement: <ErrorWrapper />,
         children: [
                 {
                     index: true,
@@ -28,7 +31,7 @@ const routes = createHashRouter(
         }, 
         {
             path: '*',
-            element: <p style={styles.text}>Page not found</p>
+            element: <ErrorWrapper />
         } 
     ]
 );

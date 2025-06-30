@@ -3,33 +3,33 @@ import React, { createContext, useContext, useState, useEffect } from 'react'
 export const ThemeContext = createContext()
 
 export const ThemeProvider = ({children}) => {
-    const [theme, setTheme] = useState(() => {
-        const savedTheme = localStorage.getItem('theme')
+    const [mode, setMode] = useState(() => {
+        const savedMode = localStorage.getItem('mode')
 
-        // console.log('Saved theme:', savedTheme)
+        // console.log('Saved mode:', savedMode)
 
-        if(savedTheme) return savedTheme
-        const preferredTheme = window.matchMedia('(prefers-color-scheme: light)').matches
+        if(savedMode) return savedMode
+        const preferredMode = window.matchMedia('(prefers-color-scheme: light)').matches
 
-        // console.log('Theme preferred:', preferredTheme)
+        // console.log('Mode preferred:', preferredMode)
 
-        return preferredTheme ? 'light' : 'dark';
+        return preferredMode ? 'light' : 'dark';
     })
 
     useEffect(() => {
-        // console.log('Setting theme:', theme)
+        // console.log('Setting mode:', mode)
 
-       document.documentElement.setAttribute('data-theme', theme)
-       localStorage.setItem('theme', theme)
-    }, [theme]);
+       document.documentElement.setAttribute('data-mode', mode)
+       localStorage.setItem('mode', mode)
+    }, [mode]);
 
-    const toggleTheme = () => setTheme(prev => prev === 'dark' ? 'light' : 'dark')
+    const toggleMode = () => setMode(prev => prev === 'dark' ? 'light' : 'dark')
 
     return (
-        <ThemeContext.Provider value={{theme, toggleTheme}}>
+        <ThemeContext.Provider value={{ mode, toggleMode}}>
             {children}
         </ThemeContext.Provider>
     )
 }
 
-export const useTheme = () => useContext(ThemeContext);
+export const useMode = () => useContext(ThemeContext);
